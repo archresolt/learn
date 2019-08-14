@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 public class Movietext {
 	public static void main(String[] args) {
-		System.out.println("欢迎光临横店影视城");
+		Moviemanger manger = new Moviemanger();
+		manger.showMainMenu();
+		
+		
+	}
+	}
+		/*System.out.println("欢迎光临横店影视城");
 		System.out.println("1,新增电影");
 		System.out.println("2,查看电影");
 		System.out.println("3,删除电影");
@@ -95,5 +101,4 @@ public class Movietext {
 			
 		
 	}
-	}
-}
+	}*/
