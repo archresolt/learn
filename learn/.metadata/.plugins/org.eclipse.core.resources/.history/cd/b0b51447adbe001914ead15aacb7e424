@@ -1,0 +1,6 @@
+package worker;
+
+public abstract  class Object {
+	
+
+}

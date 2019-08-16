@@ -1,0 +1,31 @@
+package worker;
+
+public abstract class Item {
+	private int size;
+	private String name;
+
+	public Item(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	@Override
+	public String toString() {
+		return "物件名:" + name + " 体积:" + size;
+	}
+}

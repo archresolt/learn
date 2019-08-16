@@ -1,0 +1,20 @@
+package worker;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Wawa a = new Wawa();
+		Item b = new Bottle("²£Á§");
+		Wawa c = new Wawa();
+		a.setSize(100);
+		b.setSize(100);
+		c.setSize(100);
+
+		Gezi d = new Gezi(1, 300);
+
+		d.put(a);
+		d.put(b);
+
+		System.out.println(d);
+	}
+
+}
