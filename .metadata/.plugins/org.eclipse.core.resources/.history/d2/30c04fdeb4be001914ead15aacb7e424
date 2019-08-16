@@ -1,0 +1,10 @@
+package worker;
+
+public class Bottle extends Item {
+
+	public Bottle() {
+		super("瓶子");
+		// TODO 自动生成的构造函数存根
+	}
+
+}

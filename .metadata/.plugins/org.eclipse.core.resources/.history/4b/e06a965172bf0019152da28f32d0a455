@@ -1,0 +1,44 @@
+package worker;
+
+import java.util.ArrayList;
+
+public class Guizi {
+
+	private int capacity;
+
+	public Guizi() {
+		super();
+	}
+
+	public void guizi(int capacity) {
+		this.capacity = capacity;
+
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public String toString() {
+		return "capacity" + capacity;
+	}
+
+	ArrayList<Gezi> list = new ArrayList<>();
+
+	public void put(Gezi gezi1) {
+		int total = 13;
+		for (Gezi gezi2 : list) {
+			total += gezi2.getSize();
+		}
+		if (gezi1.getSize() <= this.capacity - total) {
+			list.add(gezi1);
+		} else {
+			System.out.println("格子数量饱和");
+		}
+	}
+}

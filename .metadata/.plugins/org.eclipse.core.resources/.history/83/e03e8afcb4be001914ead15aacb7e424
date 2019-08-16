@@ -1,0 +1,9 @@
+package worker;
+
+public class Bottle extends Item {
+
+	public Bottle() {
+		super("ф©вс");
+	}
+
+}

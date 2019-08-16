@@ -1,0 +1,14 @@
+package worker;
+
+public class Bottle extends Item {
+
+	public Bottle() {
+		super("瓶子");
+	}
+
+	@Override
+	public String toString() {
+		// TODO 自动生成的方法存根
+		return super.toString();
+	}
+}

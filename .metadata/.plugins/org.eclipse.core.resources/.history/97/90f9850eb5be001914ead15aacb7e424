@@ -1,0 +1,13 @@
+package worker;
+
+public class Bottle extends Item {
+
+	public Bottle() {
+		super("ф©вс");
+	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+}

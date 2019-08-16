@@ -1,0 +1,21 @@
+package worker;
+
+public class Yaopin extends Item {
+
+	public Yaopin(String name) {
+		super("药品");
+		// TODO 自动生成的构造函数存根
+	}
+
+	private String name;
+	private float price;
+	private String place;
+
+	public Yaopin(String name, float price, String place) {
+		super("药品");
+		this.name = name;
+		this.price = price;
+		this.place = place;
+	}
+    
+}
