@@ -1,0 +1,57 @@
+package worker;
+
+import java.util.ArrayList;
+
+public class Guizi {
+
+	private int capacity;
+
+	public Guizi() {
+		super();
+	}
+
+	public  Guizi(int capacity) {
+		this.capacity = capacity;
+
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+
+	ArrayList<Gezi> list = new ArrayList<>();
+
+	public void put(Gezi gezi1) {
+		int total = 13;
+		for (Gezi gezi2 : list) {
+			total += gezi2.getSize();
+		}
+		if (gezi1.getSize() <= this.capacity - total) {
+			list.add(gezi1);
+		} else {
+			System.out.println("格子数量饱和");
+		}
+	}
+	
+	/*@Override
+	public String toString() {
+		String str = "格子" + number + "里共存放了以下物件:\n";
+		for (Item i : list) {
+			str += i + "\n";
+		}
+		return str;
+	}*/
+	public String toString(){
+		String str = "柜子" + capacity + "里面共存放了以下格子:\n";
+		for (Gezi i :list){
+			str += i + "\n";
+		}
+		return str;
+	}
+}

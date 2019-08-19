@@ -1,0 +1,24 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JdbcTest {
+	public static void main(String[] args) {
+	    String Driver="oracle.jdbc.driver.OracleDriver";    //连接数据库的方法  
+	     String URL="jdbc:oracle:thin:@localhost:1521:orcl";    //orcl为数据库的SID  
+	     String Username="scott";    //用户名  
+	     String Password="123";    //密码  
+	     try {
+			Class.forName(Driver) ;
+			Connection con=DriverManager.getConnection(URL,Username,Password);
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}    //加载数据库驱动  
+	   
+	
+	}
+
+}

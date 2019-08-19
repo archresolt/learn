@@ -1,0 +1,13 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class TestStstament {
+public static void main(String[] args) {
+	//通过工具类来获取数据库的连接
+    Connection conn = GetConn.getConn();
+	//通过数据库的连接，获取一个静态处理快，用来执行封装好的sql语句
+	 Statement stmt = conn.createStatement();
+}
+}

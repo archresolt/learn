@@ -11,3 +11,13 @@ public static void main(String[] args) {
 	
 }
 }
+/*public class Shanchu{
+	public static void main(String[] args){
+		HashMap<Integer,String> map = new HashMap<>();
+		System.out.println(map.remove(1));//null
+		map.out(2,"DEMO");
+		System.out.println(map.remove(2));
+		}
+		
+		
+	}*/
