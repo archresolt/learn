@@ -1,0 +1,17 @@
+package reflect;
+
+public class Test {
+ public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	Object object = new Dog();
+	//第一种获取反射的方式
+	Class cls = Class.forName("反射.Dog ");
+	//第二种获取反射的方式
+	cls = Dog.class;
+	//第三种获取反射的方式
+	cls = object.getClass();
+	
+	//通过反射可以创建一个新的实例
+	object = cls.newInstance();
+	
+}
+}

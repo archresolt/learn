@@ -1,0 +1,10 @@
+package jdbc02;
+
+import java.sql.Connection;
+import util.JdbcTest;
+public class TestStmt {
+public static void main(String[] args) {
+	Connection conn = JdbcTest.getConn();
+	
+}
+}
