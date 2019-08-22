@@ -1,0 +1,9 @@
+package banzhuozi;
+
+import java.util.Scanner;
+
+public class Banzhuozi {
+	Scanner input = new Scanner(System.in);
+	System.out.println("7岁以上男生女生都可以搬桌子，5~7岁只有男生可以搬桌子，5岁以下都不可以搬桌子");
+	
+}

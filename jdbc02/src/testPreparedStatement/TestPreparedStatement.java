@@ -27,17 +27,18 @@ public static void main(String[] args) throws SQLException {
 	}*/
 	
 	//创建一个预处理块，来执行一个插入的操作
-	/*PreparedStatement pstmt = conn.prepareStatement("insert into test02 (studid,studno) value(?,?)");
-	pstmt.setInt(1,1010);
-	pstmt.setInt(2,10);
+	/*PreparedStatement pstmt = conn.prepareStatement("insert into test02 (stuid,stuno) values(?,?)");
+	pstmt.setInt(1,100);
+	pstmt.setString(2,"10");
 	int n = pstmt.executeUpdate();
 	System.out.println(n);*/
 	
 	//创建一个预处理块，来执行一个更新数据的操作
-	String sql = "update emp e set e.sal = ? where e.ename = ?";
+	//String sql = "SMITH e set e.sal = ? where e.ename = ?";
+	String sql = "update emp  e set e.sal = ? where e.ename = ?";
 	PreparedStatement pstmt = conn.prepareStatement(sql);
-	pstmt.setInt(1,10000);
-	pstmt.setString(2,"大黄");
+	pstmt.setInt(1,10000);//1替代第一个问号
+	pstmt.setString(2,"wangcai0");
 	int n = pstmt.executeUpdate();
 	System.out.println(n);
 

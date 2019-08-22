@@ -3,6 +3,7 @@ package util;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,22 +19,49 @@ public class JdbcTest {
 		try {
 			Class.forName(Driver);// 加载驱动
 			con = DriverManager.getConnection(URL, Username, Password);
-			/*DatabaseMetaData metaData = con.getMetaData();
-			//通过数据库的详情对象来获取数据库相关的信息
-			System.out.println(metaData.getDatabaseProductVersion());
-			ResultSet set = metaData.getTables(con.getCatalog(),"SCOTT",null,new String[]{"TABLE"});
-			while(set.next()){
-				System.out.println(set.getString("TABLE_NAME"));
-			}*/
+			/*
+			 * DatabaseMetaData metaData = con.getMetaData();
+			 * //通过数据库的详情对象来获取数据库相关的信息
+			 * System.out.println(metaData.getDatabaseProductVersion());
+			 * ResultSet set =
+			 * metaData.getTables(con.getCatalog(),"SCOTT",null,new
+			 * String[]{"TABLE"}); while(set.next()){
+			 * System.out.println(set.getString("TABLE_NAME")); }
+			 */
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO 自动生成的 catch 块
 			e.printStackTrace();
 		} // 加载数据库驱动
-		/*System.out.println(con);*/
-		//连接到数据库之后可以执行增删改查的sql语句
-		//还可以获取数据库的相关信息
+		/* System.out.println(con); */
+		// 连接到数据库之后可以执行增删改查的sql语句
+		// 还可以获取数据库的相关信息
 		return con;
-		
-}
-	
+
+	}
+
+	public static Statement getStatement() {
+		Connection connection = getConn();
+		Statement stmt = null;
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return stmt;
+	}
+
+	public static PreparedStatement getPreparedStatement(String sql) {
+		Connection connection = getConn();
+		PreparedStatement pstmt = null;
+
+		try {
+			pstmt = connection.prepareStatement(sql);
+		} catch (SQLException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+		return pstmt;
+
+	}
 }

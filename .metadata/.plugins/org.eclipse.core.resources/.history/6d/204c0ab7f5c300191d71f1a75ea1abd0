@@ -1,0 +1,36 @@
+package util;
+
+import java.lang.reflect.Field;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DBUtil {
+	/*
+	 * 通用查询 查询的SQL语句 要将sql查询的结果封装成className类型的对象
+	 */
+	public static List<Object> select(String sql,String className){
+		ArrayList<Object> list = null;
+		try {
+			//通过类名来获取类的反射
+			Class cls = Class.forName(className);
+			//通过反射获取到该类中所包含的成员变量
+			Field[] fs = cls.getDeclaredFields();
+			
+			//执行sql语句 获取查询结果
+			Statement stmt = JdbcTest.getStatement();
+			ResultSet set = stmt.executeQuery(sql);
+			//获取查询结果的信息
+			ResultSetMetaData metaData = set.getMetaData();
+			//获取查询结果有多少列
+			int columnCount = metaData.getColumnCount();
+			//创建一个数组  用来存放每一列的名字
+			String[] columnName = new String[columnCount];
+			for (int i = 1;i<=columnName.length;i++){
+				columnName[i - 1] = metaData.getColumnName(i);
+			}
+		}
+	}
+}
