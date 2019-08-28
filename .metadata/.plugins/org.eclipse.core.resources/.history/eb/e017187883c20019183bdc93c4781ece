@@ -1,7 +1,0 @@
-package jdbc;
-
-public class EMP {
-private int empNo;
-private String ename;
-private String 
-}

@@ -31,5 +31,6 @@ public static void main(String[] args) throws SQLException {
    pstmt.addBatch();
    pstmt.executeBatch();
    
+   
 }
 }
