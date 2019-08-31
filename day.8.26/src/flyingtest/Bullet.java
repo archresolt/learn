@@ -1,6 +1,6 @@
 package flyingtest;
 
-public class Bullet extends FlyingObject {
+public class Bullet extends FlyObject {
 	private int speed = 3;//移动的速度
 
 	//初始化数据

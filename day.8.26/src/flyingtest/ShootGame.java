@@ -30,7 +30,7 @@ public static BufferedImage hero1;
 public static BufferedImage pause;
 public static BufferedImage gameover;
 
-private FlyingObject[] flyings = {};//敌机数组
+private FlyObject[] flyings = {};//敌机数组
 private Bullet[] bullets = {};//子弹数组
 private Hero hero = new Hero(); //英雄机
 

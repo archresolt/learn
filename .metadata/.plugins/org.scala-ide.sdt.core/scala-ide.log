@@ -1797,3 +1797,19 @@
 2019-08-29 19:16:04,924 ERROR [main] - System.err - Warning: NLS unused message: ConfigureProblemSeveritySubProcessor_name in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
 2019-08-29 19:16:05,284 ERROR [main] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
 2019-08-29 19:24:43,605 ERROR [main] - System.err - Warning: NLS unused message: NewProject_perspSwitchButtonLabel in: org.eclipse.ui.internal.wizards.newresource.messages
+2019-08-29 19:29:10,529 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-08-29 22:14:31,872 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
+2019-08-31 14:33:18,471 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 14:33:18,541 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 14:33:23,961 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-08-31 14:33:23,961 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathPError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-08-31 14:33:35,610 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-08-31 14:33:35,610 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-08-31 14:33:36,549 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-08-31 14:33:47,948 ERROR [Worker-3] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 14:34:16,780 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
