@@ -42,6 +42,6 @@ public class Bee extends FlyObject implements Award{
 			}
 		}
 		
-	
+	}
 }
-
+}

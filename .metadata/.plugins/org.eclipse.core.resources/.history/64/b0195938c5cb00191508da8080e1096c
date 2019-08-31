@@ -18,12 +18,11 @@ public class Bee extends FlyObject implements Award{
 		y = -height;
 		Random rand = new Random();
 		x = rand.nextInt(ShootGame.WIDTH - width);
-		awardType = rand.nextInt(2);
-		}//初始化时给奖励
+		awardType = rand.nextInt(2);//初始化时给奖励
 		
 		//获得奖励类型
 		public int getType(){
-			return awardType;
+			return y > ShootGame.HEIGHT;
 		}
 		
 		//越界处理
@@ -42,6 +41,6 @@ public class Bee extends FlyObject implements Award{
 			}
 		}
 		
-	
+	}
 }
-
+}

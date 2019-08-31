@@ -78,9 +78,8 @@ public class Hero extends FlyObject {
 		if (images.length>0){
 			image = images[index++ / 10%images.length];//切换图片
 		}
-	}
 		//碰撞算法
-		public boolean  hit(FlyObject other){
+		public boolean hit(FlyObject other){
 			int x1 = other.x - this.width/2;//x坐标最小距离
 			int x2 = other.x - this.width/2 +other.width;//x坐标最大距离
 			int y1 = other.y - this.height/2;//y坐标最小距离
@@ -91,6 +90,6 @@ public class Hero extends FlyObject {
 			
 			return herox>x1 && herox<x2 && heroy >y1 && heroy < y2;//区间范围内撞上了
 		}
-	
+	}
 
 }
