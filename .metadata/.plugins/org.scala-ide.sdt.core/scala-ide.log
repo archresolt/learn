@@ -1813,3 +1813,11 @@
 2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
 2019-08-31 14:34:03,743 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
 2019-08-31 14:34:16,780 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-08-31 14:42:32,561 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_implement_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 14:42:32,561 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_default_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 14:42:32,561 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 14:42:32,561 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_replace_with_unqualified_enum_constant in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 14:42:32,571 ERROR [main] - System.err - Warning: NLS unused message: ConfigureProblemSeveritySubProcessor_name in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 14:42:32,861 ERROR [main] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-08-31 14:43:35,325 ERROR [Worker-1] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
+2019-08-31 14:44:14,135 ERROR [Worker-10] - System.err - Warning: NLS unused message: jobs_returnNoStatus in: org.eclipse.core.internal.jobs.messages
