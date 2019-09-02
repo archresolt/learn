@@ -1,0 +1,18 @@
+package outclass;
+
+public class OuterClass {
+//外部类的成员变量
+	private int age = 10;
+	private static int a = 30 ;
+	//将一个内部类定义在外部类里面，方法的外边
+	//就得到一个成员内部类
+	class InnerClass{
+		//内部类的成员变量
+		private int age = 20;
+		//内部类的方法
+		public void test(){
+			//内部类可以直接使用外部类的成员变量
+			
+		}
+	}
+}

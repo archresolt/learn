@@ -1,0 +1,12 @@
+package outclass;
+
+import java.util.Scanner;
+
+public class Function {
+private void mian() {
+	// TODO 自动生成的方法存根
+Scanner input = new Scanner(System.in);
+int  i= input.nextInt();
+
+}
+}

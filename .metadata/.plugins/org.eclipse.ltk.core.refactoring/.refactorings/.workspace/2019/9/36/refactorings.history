@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将Java 项目“9.2”重命名为“day.9.2”&#x0D;&#x0A;－ 原始元素：“9.2”&#x0D;&#x0A;－ 重命名的元素：“9.2”&#x0D;&#x0A;－ 更新对已重构元素的引用" description="重命名 Java 项目“9.2”" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=9.2" name="day.9.2" references="true" stamp="1567436703205" version="1.0"/>
+</session>

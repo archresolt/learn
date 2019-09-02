@@ -1821,3 +1821,271 @@
 2019-08-31 14:42:32,861 ERROR [main] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
 2019-08-31 14:43:35,325 ERROR [Worker-1] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
 2019-08-31 14:44:14,135 ERROR [Worker-10] - System.err - Warning: NLS unused message: jobs_returnNoStatus in: org.eclipse.core.internal.jobs.messages
+2019-08-31 21:22:07,387 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 21:22:07,415 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 21:22:08,899 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-08-31 21:22:08,899 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathPError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-08-31 21:22:10,395 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-08-31 21:22:10,395 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-08-31 21:22:10,511 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-08-31 21:22:11,823 ERROR [Worker-3] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-08-31 21:22:16,422 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 21:22:16,422 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 21:22:16,422 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 21:22:16,422 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 21:22:16,422 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 21:22:17,533 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-08-31 21:24:33,243 ERROR [Worker-7] - System.err - Warning: NLS unused message: jobs_returnNoStatus in: org.eclipse.core.internal.jobs.messages
+2019-08-31 21:26:03,775 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-08-31 21:32:36,852 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
+2019-08-31 21:38:14,544 ERROR [main] - System.err - Warning: NLS unused message: filtersDialog_description in: org.eclipse.ui.views.markers.internal.messages
+2019-08-31 21:48:00,329 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_implement_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 21:48:00,329 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_default_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 21:48:00,329 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 21:48:00,329 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_replace_with_unqualified_enum_constant in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 21:48:00,329 ERROR [main] - System.err - Warning: NLS unused message: ConfigureProblemSeveritySubProcessor_name in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-08-31 23:07:33,336 ERROR [Info view input computer] - System.err - Exception in thread "Info view input computer"
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - java.lang.NullPointerException
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.added(JavaElementDeltaBuilder.java:127)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.findAdditions(JavaElementDeltaBuilder.java:177)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.findAdditions(JavaElementDeltaBuilder.java:203)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.findAdditions(JavaElementDeltaBuilder.java:203)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.findAdditions(JavaElementDeltaBuilder.java:203)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaElementDeltaBuilder.buildDeltas(JavaElementDeltaBuilder.java:148)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:172)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.corext.util.JavaModelUtil.reconcile(JavaModelUtil.java:609)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.ui.infoviews.TextSelectionConverter.codeResolve(TextSelectionConverter.java:86)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.ui.infoviews.TextSelectionConverter.codeResolve(TextSelectionConverter.java:54)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView.findSelectedJavaElement(AbstractInfoView.java:479)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.ui.infoviews.JavadocView.findSelectedJavaElement(JavadocView.java:1208)
+2019-08-31 23:07:33,340 ERROR [Info view input computer] - System.err - at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:708)
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_Invalid_stdin_file_location_15 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_Select_a_location_for_the_Input_File_15 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_16 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_17 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_18 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_19 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:10,739 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_20 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_10 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_11 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_12 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_13 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaDependenciesTab_0 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,189 ERROR [main] - System.err - Warning: NLS unused message: JavaDependenciesTab_Dependencies_3 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Cannot_launch in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Cycle in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Error in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_0 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_4 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_5 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_7 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_8 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_9 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_1 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_10 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_11 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_12 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_13 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_14 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_15 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_adoptTooltip in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_errorNoRegexp in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_regexp in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_0 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_1 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_2 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_3 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_4 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_5 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_6 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_7 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_10 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_12 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_13 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_14 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_15 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,639 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_16 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-08-31 23:48:13,771 ERROR [Worker-5] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_Enable_hot_code_replace_1 in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-08-31 23:48:13,771 ERROR [Worker-5] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_ShowStepResult_1 in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-08-31 23:48:13,771 ERROR [Worker-5] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_filterUnrelatedBreakpoints in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-08-31 23:48:17,089 ERROR [main] - System.err - Warning: NLS unused message: ProcessConsole_3 in: org.eclipse.debug.internal.ui.views.console.ConsoleMessages
+2019-08-31 23:50:14,132 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 23:50:14,133 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-08-31 23:50:15,455 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-08-31 23:50:16,150 ERROR [Worker-1] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-08-31 23:50:17,415 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 23:50:17,415 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 23:50:17,415 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 23:50:17,415 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-08-31 23:50:17,415 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 00:02:18,460 ERROR [Info view input computer] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-09-01 00:05:04,559 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: WizardProjectsImportPage_projectsInvalid in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: WizardProjectsImportPage_projectsInWorkspaceAndInvalid in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: WizardProjectsImportPage_invalidProjectName in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: ExportFile_resolveLinkedResources in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_selectFolderOrArchiveToImport in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_browseForFolder in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_alreadyImportedAsProject_title in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_anotherProjectWithSameNameExists_description in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_importProjectsInFolderTitle in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_importProjectsInFolderDescription in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_selectRootDirectory in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_incorrectRootDirectory in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_browse in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_selectArchiveButton in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_selectArchiveTitle in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_workingSets in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_importedProjects in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_detectNestedProjects in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_configureProjects in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_showAvailableDetectors in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_availableDetectors_title in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_availableDetectors_description in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_importedProjectsWithCount in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_relativePath in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_project in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_natures in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_importErrors in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportReport_error in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_scanProjectsFailed in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_allSupportedArchives in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_discardRootProject_title in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_discardRootProject_description in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_selectionSummary in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_folder in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_importAs in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_hideExistingProjects in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_inspecitionCanceled in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportProposals_errorWhileInspecting in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_detectAndConfigureProjects in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_configuringSelectedDirectories in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_configuring in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_crawling in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_continuingConfiguration in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_inspecting in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportJob_importingProjectIntoWorkspace in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_expandingArchive in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_overwriteArchiveDirectory_title in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_overwriteArchiveDirectory_message in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_incompleteExpand_title in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_incompleteExpand_message in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_selectAtLeastOneFolderToOpenAsProject in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,057 ERROR [ModalContext] - System.err - Warning: NLS unused message: SmartImportWizardPage_showOtherSpecializedImportWizard in: org.eclipse.ui.internal.wizards.datatransfer.messages
+2019-09-01 00:05:11,097 ERROR [Worker-11] - System.err - Warning: NLS unused message: jobs_returnNoStatus in: org.eclipse.core.internal.jobs.messages
+2019-09-01 00:06:25,780 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_10 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_11 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_12 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaJRETab_13 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaDependenciesTab_0 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:33,980 ERROR [main] - System.err - Warning: NLS unused message: JavaDependenciesTab_Dependencies_3 in: org.eclipse.jdt.internal.debug.ui.launcher.LauncherMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Cannot_launch in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Cycle in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunch_Error in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_0 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_4 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_5 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_7 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_8 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_9 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_1 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_10 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_11 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_12 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_13 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_14 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_15 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_adoptTooltip in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_errorNoRegexp in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationSelectionDialog_regexp in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_0 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_1 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_2 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_3 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_4 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_5 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_6 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_7 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_10 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_12 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_13 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_14 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_15 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,120 ERROR [main] - System.err - Warning: NLS unused message: GroupLaunchConfigurationTabGroup_16 in: org.eclipse.debug.internal.ui.DebugUIMessages
+2019-09-01 00:09:34,160 ERROR [Worker-0] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_Enable_hot_code_replace_1 in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-09-01 00:09:34,160 ERROR [Worker-0] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_ShowStepResult_1 in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-09-01 00:09:34,160 ERROR [Worker-0] - System.err - Warning: NLS unused message: JavaDebugPreferencePage_filterUnrelatedBreakpoints in: org.eclipse.jdt.internal.debug.ui.DebugUIMessages
+2019-09-01 00:09:34,691 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-01 00:09:34,691 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-01 00:09:34,891 ERROR [main] - System.err - Warning: NLS unused message: ProcessConsole_3 in: org.eclipse.debug.internal.ui.views.console.ConsoleMessages
+2019-09-01 00:14:30,895 ERROR [Worker-4] - System.err - Warning: NLS unused message: SocketListeningConnectorImpl_Limit in: org.eclipse.jdi.internal.connect.ConnectMessages
+2019-09-01 00:14:30,895 ERROR [Worker-4] - System.err - Warning: NLS unused message: SocketListeningConnectorImpl_Limit_incoming_connections in: org.eclipse.jdi.internal.connect.ConnectMessages
+2019-09-01 00:14:31,075 ERROR [Listening Connector] - System.err - Warning: NLS unused message: InterfaceTypeImpl_Static_interface_methods_require_newer_JVM in: org.eclipse.jdi.internal.JDIMessages
+2019-09-01 00:14:31,185 ERROR [Worker-10] - System.err - Warning: NLS unused message: JDIStackFrame_ReturnValue in: org.eclipse.jdt.internal.debug.core.model.JDIDebugModelMessages
+2019-09-01 00:14:31,185 ERROR [Worker-10] - System.err - Warning: NLS unused message: JDIStackFrame_ExceptionThrown in: org.eclipse.jdt.internal.debug.core.model.JDIDebugModelMessages
+2019-09-01 00:14:31,185 ERROR [Worker-10] - System.err - Warning: NLS unused message: JDIStackFrame_NoMethodReturnValue in: org.eclipse.jdt.internal.debug.core.model.JDIDebugModelMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_Invalid_stdin_file_location_15 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_Select_a_location_for_the_Input_File_15 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_16 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_17 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_18 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_19 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:14:31,255 ERROR [main] - System.err - Warning: NLS unused message: CommonTab_20 in: org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages
+2019-09-01 00:22:44,840 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_implement_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-09-01 00:22:44,840 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_default_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-09-01 00:22:44,840 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_override_method_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-09-01 00:22:44,840 ERROR [main] - System.err - Warning: NLS unused message: LocalCorrectionsSubProcessor_replace_with_unqualified_enum_constant in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-09-01 00:22:44,840 ERROR [main] - System.err - Warning: NLS unused message: ConfigureProblemSeveritySubProcessor_name in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+2019-09-01 00:24:13,510 ERROR [main] - System.err - Warning: NLS unused message: JavaBreakpointPage_12 in: org.eclipse.jdt.internal.debug.ui.propertypages.PropertyPageMessages
+2019-09-01 00:24:13,510 ERROR [main] - System.err - Warning: NLS unused message: JavaBreakpointPage_13 in: org.eclipse.jdt.internal.debug.ui.propertypages.PropertyPageMessages
+2019-09-01 15:10:28,479 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-01 15:10:28,509 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-01 15:10:30,530 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-01 15:10:30,530 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-01 15:10:30,639 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-09-01 15:10:31,620 ERROR [Worker-3] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-09-01 15:10:35,094 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 15:10:35,094 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 15:10:35,094 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 15:10:35,094 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 15:10:35,094 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-01 16:32:41,273 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-09-01 16:35:42,724 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-09-02 17:11:00,441 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-02 17:11:00,461 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-02 17:11:01,811 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-09-02 17:11:01,811 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathPError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-09-02 17:11:03,331 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-02 17:11:03,331 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-02 17:11:03,511 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-09-02 17:11:04,671 ERROR [Worker-0] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-09-02 17:11:08,220 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 17:11:08,220 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 17:11:08,220 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 17:11:08,220 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 17:11:08,220 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 17:12:30,088 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-09-02 19:11:06,843 ERROR [main] - System.err - Warning: NLS unused message: ClassFileEditor_changeExternalAnnotations_caption in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-02 19:11:06,853 ERROR [main] - System.err - Warning: NLS unused message: AnnotateClassFile_label in: org.eclipse.jdt.internal.ui.javaeditor.JavaEditorMessages
+2019-09-02 19:11:08,185 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-09-02 19:11:08,185 ERROR [main] - System.err - Warning: NLS unused message: RunnerBootpathPError in: org.eclipse.jdt.internal.launching.LaunchingMessages
+2019-09-02 19:11:09,682 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_0 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-02 19:11:09,682 ERROR [main] - System.err - Warning: NLS unused message: WordWrapAction_1 in: org.eclipse.ui.internal.console.ConsoleMessages
+2019-09-02 19:11:09,802 ERROR [main] - System.err - Warning: NLS unused message: TextEditorPreferencePage_enableWordWrap in: org.eclipse.ui.internal.editors.text.TextEditorMessages
+2019-09-02 19:11:11,169 ERROR [Worker-2] - System.err - Warning: NLS unused message: Pre_neon2_pref_value_everyday in: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.messages
+2019-09-02 19:11:14,205 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_0 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 19:11:14,205 ERROR [main] - System.err - Warning: NLS unused message: RemoveAllTriggerPointsAction_1 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 19:11:14,205 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_2 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 19:11:14,205 ERROR [main] - System.err - Warning: NLS unused message: RunToLineAction_3 in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 19:11:14,205 ERROR [main] - System.err - Warning: NLS unused message: TerminateAndLaunchFailure in: org.eclipse.debug.internal.ui.actions.ActionMessages
+2019-09-02 19:23:23,184 ERROR [main] - System.err - Warning: NLS unused message: TracepointToggleAction_Unavailable in: org.eclipse.jdt.internal.debug.ui.actions.ActionMessages
+2019-09-02 19:23:51,089 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavadocHover_fallback_warning in: org.eclipse.jdt.internal.ui.text.java.hover.JavaHoverMessages
+2019-09-02 19:23:51,189 ERROR [Text Viewer Hover Presenter] - System.err - Warning: NLS unused message: JavaDoc2HTMLTextReader_type_parameters_section in: org.eclipse.jdt.internal.ui.text.javadoc.JavaDocMessages
+2019-09-02 23:04:41,041 ERROR [main] - System.err - Warning: NLS unused message: jobs_returnNoStatus in: org.eclipse.core.internal.jobs.messages
+2019-09-02 23:04:42,100 ERROR [main] - System.err - Warning: NLS unused message: NewProject_perspSwitchButtonLabel in: org.eclipse.ui.internal.wizards.newresource.messages
