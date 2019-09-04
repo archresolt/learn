@@ -1,0 +1,14 @@
+package cn.sxt.mycollection;
+
+public class SxtLinkedLIst03 {
+/*
+ * 自定义一个链表
+ * 增加remove
+ */
+	public class SxtLinkedList03{
+		private Node first;
+		private Node last;
+		private int size ;
+		
+	}
+}
