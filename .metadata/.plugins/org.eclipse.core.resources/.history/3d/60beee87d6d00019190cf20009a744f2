@@ -1,0 +1,10 @@
+package mychain;
+
+public class Test {
+	public static void main(String[] args) {
+
+		LinkedList n = new LinkedList();
+		n.add("ÖÐ¹ú");
+System.out.println(n);
+	}
+}

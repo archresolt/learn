@@ -1,0 +1,13 @@
+package mychain;
+
+public class Test {
+	public static void main(String[] args) {
+
+		LinkedList n = new LinkedList();
+		n.add("中国");
+		System.out.println(n);
+
+		n.add("美国");
+	n.get(1);
+	}
+}

@@ -1,0 +1,18 @@
+package mychain;
+
+public class LinkedList {
+private Node head;//头节点
+private int CarChainSize;//链表大小
+
+public int getCarChainSize(){
+	return this.CarChainSize;
+}
+public Node getHead(){
+	return this.head;
+	
+}
+//添加节点，头部插入
+public void addNode(){
+	
+}
+}

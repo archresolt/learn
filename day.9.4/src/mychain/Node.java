@@ -1,0 +1,50 @@
+package mychain;
+
+import personchain.PersonChainNode;
+
+public class Node {
+	Node prev;// 上一个节点
+	Node next;// 下一个节点
+	Object data;// 数据元素
+
+	public Node(Node prev, Node next, Node data) {
+		super();
+		this.prev = prev;
+		this.next = next;
+		this.data = data;
+	}
+
+	public Node() {
+		super();
+		this.data = data;
+	}
+
+	// 获取下一个节点
+	public Node getNextNode() {
+		// TODO 自动生成的方法存根
+
+		return this.next;
+	}
+
+	// 设置下一个节点
+	public void setNextNode(Node next) {
+		this.next = next;
+	}
+
+	// 获取上一个节点
+	public Node getPrevNode() {
+		return this.prev;
+
+	}
+
+	// 设置上一个节点
+	public void setPrevNode(Node prev) {
+		this.prev = prev;
+	}
+
+	@Override
+	public String toString() {
+		// TODO 自动生成的方法存根
+		return data == null ? "Empty Node" : data.toString();
+	}
+}

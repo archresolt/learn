@@ -1,0 +1,34 @@
+package mychain;
+
+import personchain.PersonChainNode;
+
+public class LinkedList {
+private Node head;//头节点
+private Node tial;//尾结点
+private int size;//长度
+public Node getHead(){
+	return this.head;
+	
+}
+//添加节点，存放数据到末位
+public void add( Object data){
+	Node n = new Node();
+	tial.next = n;
+	tial = n;
+}
+	
+
+
+//移除指定位置的数据
+public void remove(int i){
+	int count = 0;
+count++;
+	for(Node p = head;head != null;p= p.next){
+		
+	}
+}
+
+//获取指定位置的数据
+public void get(int i){
+	return 
+}

@@ -1,0 +1,75 @@
+表單元素;單選按鈕;提交按鈕;用<fieldset>組合表單數據;下拉列表（失敗）
+<form>
+    First name :<br>
+    <input type = "text" name = "firstname">
+    <br>
+    Last name :<br>
+    <input type = "text" name = "lastname">
+
+</form>
+
+<form>
+    <input type = "radio" name = "sex" value = "male" checked> male
+    <br>
+    <input type = "radio" name = "sex" value = "female">female
+
+
+</form>
+
+<form action = "action_page.php">
+    First name :<br>
+    <input type = "text" name = "firstname" value = "Monkey King">
+    <br>
+    Last name:<br>
+    <input type = "text" name = "lastname" value = "Mouse">
+    <br><br>
+    <input type = "submit" value ="Submit">
+</form>
+
+<form action = "action_page.php">
+    <fieldset>
+        <legend>Personal information:</legend>
+    First name :<br>
+    <input type = "text" name = "firstname" value = "Monkey King">
+    <br>
+    Last name:<br>
+    <input type = "text" name = "lastname" value = "Mouse">
+    <br><br>
+    <input type = "submit" value ="Submit"></fieldset>
+</form>
+
+表單中的元素，最重要的就是<input>
+
+<select>元素定義下拉列表
+    <select name = "cars">
+        <option value = "volvo"></option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+
+    <textarea>元素定義多行輸入字段
+        <textarea name = "message" rows = "10" cols = "30">
+            The cat was playing in the school.
+        </textarea>
+
+<botton>元素定義按鈕
+    <botton type = "button" onclick = "alert('Hello World')">Click Me
+    </botton>
+
+<datalist>設置預定義值的<input>元素
+    <form action="action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+           <option value="Internet Explorer">
+           <option value="Firefox">
+           <option value="Chrome">
+           <option value="Opera">
+           <option value="Safari">
+        </datalist> 
+        </form>
+
+
+
+

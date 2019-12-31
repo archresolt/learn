@@ -1,0 +1,16 @@
+package mychain;
+
+public class Node {
+Node previous ;//上一个节点
+Node next;//下一个节点
+Node element;//数据元素
+public Node(Node previous,Node next, Node element ){
+	super();
+	 this.next = next;
+	 this.element = element;
+}
+public Node(){
+	super();
+	this.element = element;
+}
+}

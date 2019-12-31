@@ -1,0 +1,24 @@
+子元素選擇器;包含company的class屬性
+<style type = "text/css">
+h1>strong{color:red;}
+
+table.company td>p{color:blue;}
+</style>
+
+<h1>如果希望選擇<strong>只作爲h1元素子元素</strong>的strong元素</h1>
+<h1>這個<em>裏面strong<strong>不但作爲h1的子元素</strong>，還作爲em的</em>子元素</h1>
+
+<table>
+    <tr>
+        <th>Heading</th>
+        <th>Another Heading</th>
+    </tr>
+<tr>
+    <td>row 1, cell 1</td>
+    <td>row 1, cell 2</td>
+</tr>
+<tr>
+    <td><p>row2,cell1</p></td>
+    <td>row2,cell2</td>
+</tr>
+</table>

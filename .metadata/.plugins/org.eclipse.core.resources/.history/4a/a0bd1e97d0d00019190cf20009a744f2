@@ -1,0 +1,8 @@
+package mychain;
+
+public class Test {
+LinkedList n = new LinkedList();
+  n.add("ÖÐ¹ú");
+
+
+}

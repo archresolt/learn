@@ -1,0 +1,73 @@
+跨行和跨列的表格;表格内的標簽；
+<html>
+    <body>
+        <h4>橫跨兩列的單元格</h4>
+        <table broder = "1">
+            <tr>
+                <th>姓名</th>
+                <th colspan = "2">電話</th>
+            </tr>
+            <tr>
+                <td>曹瀚</td>
+                <td>13250</td>
+                <td>18818</td>
+            </tr>
+        </table>
+
+        <h4>橫跨兩行的單元格：</h4>
+        <table border = "1">
+            <tr>
+                <th>姓名</th>
+                <td>曹瀚</td>
+            </tr>
+            <tr>
+            <th  rowspan="2">電話</th>
+            <td>55577849</td>
+            </tr>
+            <tr>
+                <td>55577855</td>
+            </tr>
+        </table>
+
+        <table border = "1">
+        <tr>
+            <td>
+                <p>這是一段</p>
+                <p>這是另一段</p>
+            </td>
+            <td>這個單元包含一個表格：
+                <table border = "1">
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                    </tr>
+                    <tr>
+                        <td>c</td>
+                        <td>d</td>
+                    </tr> 
+                </table>
+       </td>
+    </tr>
+            
+       <tr>
+                <td>這個單元包含一個列表：
+                    <ul>
+                        <li>蘋果</li>
+                        <li>香蕉</li>
+                        <li>菠蘿</li>
+                    </ul>
+                </td>
+                <td>HELLO</td>
+            </tr>
+
+        </tr>
+        </table>
+    </body>
+</html>
+
+
+
+
+
+
+colspan:跨列數

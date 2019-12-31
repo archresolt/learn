@@ -24,6 +24,30 @@ public class PersonChain {
 			}
 		}
 
+		//添加节点，从第index位置插入
+		public void addNodeIndex(Person p,int index){
+			if(index==0){//如果从0位置插入，即从头部插入
+				addNode(p);
+			}
+			else{
+				if(index>chainSize){//index位置超出链表容量
+					System.out.println("超出链表最大的节点数:"+chainSize+",请重新输入要插入的索引位置。");
+				}
+				else{
+					int count=0;
+					for(PersonChainNode pcn=head;pcn!=null;pcn=pcn.getNextNode()){//遍历链表
+						count++;
+						if(count == index){//找到index位置的节点，这时候的pcn是这个节点的前一个节点
+							PersonChainNode pcn1 = new PersonChainNode(p,pcn.getNextNode());//新节点pcn1的下一个节点是pcn节点的下一个节点
+							pcn.setNextNode(pcn1);//pcn的下一个节点变成新的节点pcn1
+						}
+					}
+				}
+			}
+			
+		}
+
+
 
 	// 删除节点
 	public void deleteNode(int index) {
@@ -37,6 +61,9 @@ public class PersonChain {
 				chainSize = chainSize - 1;
 			} else {
 
+			
+				
+				
 				if (index == chainSize - 1) {// 如果是删除最后一个节点
 					int count = 0;
 					for (PersonChainNode pcn = head; pcn != null; pcn = pcn
