@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf8">
+    <title>
+        Vue 测试实例
+    </title>
+    <script src = "libs/vue.min.js"></script>
+<body>
+<div id = "vueDet">
+    <h1>site :{{site}}</h1>
+    <h1>url :{{url}}</h1>
+    <h1>Alexa : {{alexa}}</h1>
+</div>
+<script type = "text/javascript">
+//我们的数据对象
+var data = {site : "菜鸟教程",url:"www.runoob.com",alexa :10000}
+var vm = new Vue({
+    el:'#vueDet',
+data:data
+})
+
+document.write(vm.$data ===data)
+document.write("<br>")
+document.write(vm.$el=== document.getElementById('vueDet'))
+</script>
+
+</body>
+    </html>

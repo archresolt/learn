@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+<meta name = "viewport" content = "width = device-width,initial-scale = 1.0">
+<meta http-equiv = "X-UA-Compatible" content = "ie = edge">
+        <title>vue测试实例</title>
+        <script src = "./libs/vue.min.js"></script>
+    </head>
+<body>
+    <div id = "app">
+        <input type = "button" value="单击事件" v-on:click = "doit">
+        <input type = "button" value="简化版单击事件" @click = "doit">
+        <input type = "button" value="双击事件" @dblclick = "doit">
+        <h1 v-on:click = "changFood">{{food}}</h1>
+    </div>
+   
+        <script>
+        var app = new Vue({
+            el :'#app',
+            data:{
+                food:"西蓝花炒鸡蛋"
+            },
+            methods:{
+                doit:function(){
+                    alert("做IT");
+                },
+                changFood:function(){
+                    this.food +="好好吃!"
+                },
+            },
+        })
+        </script>
+    
+</body>
+  </html>

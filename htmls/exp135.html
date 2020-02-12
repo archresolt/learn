@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+v-bind指令操作属性
+<head>
+  <meta charset="utf-8">
+  <titil>vue测试实例</titil>
+  <script src="libs/vue.min.js"></script>
+  <style>
+  .active{
+    border:1px red solid;
+  }
+  </style>
+</head>
+<body>
+<div id="app">
+  <img v-bind:src="imgSrc" alt="">
+  <br>
+  <!--鼠标停留弹框效果-->
+  <img v-bind:src="imgSrc" alt="" :title="imgTitle+'!!!'">
+  <!--添加类属性三目表达式写法-->
+  <img :src="imgSrc" alt="" :title="imgTitle+'!!!'" :class="isActive ? 'active' :''" @click="toggleActive">
+  <!--添加类属性简便的对象写法-->
+  <img :src="imgSrc" alt="" :title="imgTitle+'!!!'" :class="{active:isActive}" @click="toggleActive">
+
+</div>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      imgSrc: "关于我们/t01a2f69769cd1bd55b.jpg",
+      imgTitle: "超级赛亚人3",
+      isActive: false,
+    },
+    methods: {
+      toggleActive: function () {
+        this.isActive = !this.isActive;
+        //千万注意，操作data中的属性时，要靠this才能get到啊。
+      }
+    }
+  })
+</script>
+</body>
+</html>

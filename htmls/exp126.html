@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>测试实测</title>
+        <script src = "./libs/vue.min.js"></script>
+    </head>
+
+    <body>
+        <div id = "veuDet">
+<h1>site : {{site}}</h1>
+<h1>url : {{url}}</h1>
+<h1>Alexa : {{alexa}}</h1>        
+</div>
+<script type = "text/javascript">
+//我们的数据对象
+var data = {site:"菜鸟教程",url :"www.runoob.com",alexa:10000}
+var vm = new Vue({
+    el :'#vue_det',
+    data : data
+})
+//他们引用相同的对象
+document.write(vm.site===data.site)
+document.write("<br>")
+//设置属性会影响到原始数据
+vm.site = "Runoob"
+document.write(data.site + "<br>")
+
+//反之也是这样
+documet.write(vm.alexa)
+</script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+跑馬燈(尤其注意setInterval方法与clearInterval方法)
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <titil>vue测试实例</titil>
+    <script src="libs/vue.min.js"></script>
+</head>
+<!--创建一个要控制的区域-->
+<div id="app">
+    <input type="button" value="狼起来" @click = "lang">
+    <input type="button" value="低调" @click = "stop">
+    <h4>{{msg}}</h4>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: '跑马灯走起来了，猥琐发育别浪~~~!!!',
+            intervalId:null,
+        },
+        methods: {
+            lang(){
+              /*  var _this = this
+                //千万要注意这里的this指向问题
+           setInterval(function(){
+            var start = _this.msg.substring(0,1);
+             var end = _this.msg.substring(1);
+             this.msg = end + start;
+           },400)*/
+
+         /*  setInterval(()=>{
+            var start = _this.msg.substring(0,1);
+             var end = _this.msg.substring(1);
+             this.msg = end + start;
+           },400)*/
+           if(this.intervalId!= null) return;
+           this.intervalId = setInterval(()=>{ var start = this.msg.substring(0,1);
+             var end = this.msg.substring(1);
+             this.msg = end + start;
+            },200)
+            },
+           stop(){
+                 clearInterval(this.intervalId)
+                 this.intervalId = null;
+            }
+        },
+    })
+</script>
+
+</html>

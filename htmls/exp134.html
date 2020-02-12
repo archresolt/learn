@@ -1,0 +1,31 @@
+v-if指令
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <titil>vue测试实例</titil>
+ <script src = "libs/vue.min.js"></script>
+    </head>
+<body>
+  <div id = "app">
+    <input type = "button" value = "切换显示" @click = "toggleIsShow">
+    <p v-if = "isShow">黑马程序员</p>
+    <p v-show = "isShow">黑马程序员-v-show修饰</p>
+    <h2 v-if = "temperature>=35">忒热了</h2>
+  </div>
+  <script>
+  var app = new Vue({
+    el:"#app",
+    data:{
+      isShow:false,
+      temperature:45
+    },
+    methods:{
+      toggleIsShow:function(){
+        this.isShow = !this.isShow;
+      }
+    }
+  })
+  </script>
+</body>
+  </html>

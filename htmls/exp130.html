@@ -1,0 +1,36 @@
+html属性中的值应使用v-bind指令(没懂)
+判断class1的值，如果为true，则使用class1的样式，否则不使用这个
+类
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <titil>vue测试实例</titil>
+ <script src = "libs/vue.min.js"></script>
+    </head>
+    <style>
+    .class1{
+        background:red;
+        color:blue;
+    }
+    
+    </style>
+<body>
+    <div id = "app">
+        <label for = "r1">修改颜色</label><input type 
+        = "checkbox" v-model = "use"  id = "r1">
+        <br><br>
+        <div v-bind:class = "{'class1':use}">
+        v-bind:class指令
+    </div>
+    </div>
+    <script>
+    new Vue({
+        el:'#app',
+        data:{
+            use:false
+        }
+    });
+    </script>
+</body>
+  </html>

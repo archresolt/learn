@@ -1,0 +1,20 @@
+在所有的数字运算中，js会尝试将字符串转换为数字
+<!DOCTYPE html>
+<html></html>
+
+<body>
+    <h1>js数字</h1>
+    <p>
+        在相除时，js会尝试将字符串转换为数字：
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        var x = "100";
+        var y = "10";
+        var z = x / y;
+        document.getElementById("demo").innerHTML = z;
+    </script>
+</body>
+
+</html>

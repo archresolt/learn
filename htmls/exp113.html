@@ -1,0 +1,20 @@
+写js实现点击按钮显示时间
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>js事件</h1>
+
+    <button onclick="displayDate()">时间是？</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML =
+                Date();
+        }
+    </script>
+<!-- 这里换行标签是有效的   -->
+<br>
+    <p2 id="demo"></p2>
+</body>
+
+</html>

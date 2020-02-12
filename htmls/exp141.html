@@ -1,0 +1,36 @@
+v-on补充
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <titil>vue测试实例</titil>
+  <script src="libs/vue.min.js"></script>
+</head>
+
+<body>
+    <div id = "app">
+        <input type = "button" value = "点击" @click = "doIt(666,'老铁')" >
+    <input type ="text" @keyup.enter = "sayhi">
+    </div>
+
+    <script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+     
+        },
+        methods: {
+            doIt:function(p1,p2){
+         console.log("做it");
+         console.log(p1);
+         console.log(p2);
+            },
+            sayhi:function(){
+                alert("吃了没");
+            }
+        },
+    })
+    </script>
+</body>
+</html>

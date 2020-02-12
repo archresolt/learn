@@ -1,0 +1,17 @@
+   .part6-3-font{
+            font-size:12px;
+font-family:FZLTHK--GBK1-0,FZLTHK--GBK1;
+font-weight:normal;
+color:rgba(144,144,144,1);
+line-height:14px;
+        }
+
+        .part6-4{
+            width:23px;
+            height:14px;
+            margin-right: 160px;
+            padding-top: -14px;
+            float: right;
+        }
+
+       

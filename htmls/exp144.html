@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <titil>vue测试实例</titil>
+  <script src="libs/vue.min.js"></script>
+</head>
+
+
+<body>
+<div id = "app">
+<ul>
+    <li v-for = "(it,index) in arr">
+        {{ index +1}}黑马校区：{{ it }}
+    </li>
+</ul>
+</div>
+
+<script>
+var app = new Vue({
+    el:'#app',
+    data:{
+        arr:["北京","上海","广州"],
+        vegetables:[
+            {name:"西蓝花炒鸡蛋"},
+            {name:"西红柿炒鸡蛋"}
+        ]
+    }
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+新增，删除，统计，清空，隐藏
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>vue测试实例</title>
+    <script src="libs/vue.min.js"></script>
+    <style>
+    .header{
+        position: relative;
+        
+    }
+    </style>
+</head>
+
+<body>
+    <!--主体区域-->
+    <section id="todoapp">
+        <!--输入框-->
+        <header class="header">
+            <h1>小黑记事本</h1>
+            <input v-model="inputValue" @keyup.enter="add" autofocus="autofocus" autocomplete="off" placeholder="请输入任务"
+                class="new-todo" />
+        </header>
+        <!--列表区域-->
+        <section class="main">
+            <ul class="todo-list">
+                <li class="todo" v-for="(item,index) in list">
+                    <div class="view">
+                        <span class="index">{{ index +1}}</span>
+                        <label>{{ item }}</label>
+                        <button class="destory" @click="remove(index)"></button>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+        <!--统计和晴空-->
+        <footer class="footer">
+            <span class="todoCout" v-if="list.length!=0">
+                <strong>{{ list.length }}</strong>条记录
+            </span>
+            <button class="clear-completed" @click="clear" v-show="list.length!=0">
+                清空
+            </button>
+        </footer>
+
+    </section>
+    <!--底部-->
+    <footer class="info">
+
+    </footer>
+    <script>
+        var app = new Vue({
+            el: "#todoapp",
+            data: {
+                list: ["吃饭", "睡觉", "写代码", "打游戏"],
+                inputValue: "好好学习，天天向上"
+            },
+            methods: {
+                add: function () {
+                    this.list.push(this.inputValue);
+                },
+                remove: function (index) {
+                    //console.log("删除");
+                    //console.log(index);
+                    this.list.splice(index, 1);
+                },
+                clear: function () {
+                    this.list = [];
+                }
+
+            },
+
+
+        })
+    </script>
+</body>
+
+</html>

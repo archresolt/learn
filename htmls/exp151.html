@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>vue测试实例</title>
+  <script src="libs/vue.min.js"></script>
+
+  <style>
+    #border1 {
+      width: 500px;
+      height: 400px;
+      border: 1px red solid;
+      position: relative;
+      
+    }
+
+    .left {
+      width: 40px;
+      height: 30px;
+      margin-top: 185px;
+      position: absolute;
+      margin-left: 0px;
+      border: 1px red solid;
+    }
+
+    .right {
+      width: 40px;
+      height: 30px;
+      margin-top: 185px;
+      margin-left: 459px;
+      position: absolute;
+      border: 1px red solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div id = "border1" >
+    <img :src="imgArr[index]">
+    <!--左箭头-->
+
+    <div class="left">
+      <a href="javascript:void(0)" class="left1" v-show ="index!=0" @click="prev" >
+        <img src="关于我们/360截图20200205131449687.jpg" >
+      </a>
+
+    </div>
+    <div class="right">
+      <a href="javascript:void(0)" class="right1" v-show = "index < imgArr.length-1" @click="next">
+        <img src="关于我们/360截图20200205131504942.jpg">
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  var border1 = new Vue({
+    el: '#border1',
+    data: {
+      imgArr: [
+        "赛亚人/00.jpeg",
+        "赛亚人/01.jpg",
+        "赛亚人/02.jpg",
+        "赛亚人/03.jpg",
+        "赛亚人/04.JPEG"
+      ],
+      index:0,
+    },
+    methods: {
+      prev: function () {
+        this.index--;
+      },
+      next: function () {
+        this.index++;
+      }
+    }
+  })
+
+
+</script>
+
+</html>

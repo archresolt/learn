@@ -1,0 +1,25 @@
+This关键字
+在js中，this是一个对象。this的值，当他被用在函数里，是一个“拥有”
+函数的对象；用在一个对象里，是对象本身。在对象构造器中，this关键字
+没有值，只是新对象的替代品。
+注意：this不是变量，不可以改变它的值，它只是关键字。
+
+创造一种对象类型的对象构造器
+<html>
+
+<body>
+    <h2 id = "demo"></h2>
+    <script>
+    function person(first,last,age,eye){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    var myFather = new person ("wukong","li",50,"yellow");
+
+    document.getElementById("demo").innerHTML = myFather.lastName + ""
+    +myFather.firstName;
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+可以用全局js函数isNaN()来确定某个值是否是数；
+(同时，如果在数学运算中使用了NaN，则结果也一定是NaN：
+另外，NaN是数，typeof NaN 返回值是number.
+)
+<!DOCTYPE html>
+<html>
+<h1>js数字</h1>
+<p>您可以使用全局js函数isNaN()来确定某个值是否是数：</p>
+<p id="demo"></p>
+
+<script>
+    var x = 100 / "Apple";
+    document.getElementById("demo").innerHTML = isNaN(x);
+
+</script>
+
+</html>

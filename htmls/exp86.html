@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>location</title>
+
+    </head>
+
+    <body>
+        <bottom>
+            <span>
+                3秒後自動跳轉
+            </span>
+        </bottom>
+
+        <script>
+        console.log(window.location);
+        var num = 3;
+        var id = setInterval(jump,1000);
+        function jump(){
+            num --;
+            if (num == 0){
+                clearInterval(id);
+                window.location.href = "http://www.baidu.com";
+            }
+        }
+        </script>
+    </body>
+</html>

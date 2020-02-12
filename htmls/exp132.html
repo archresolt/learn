@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <titil>vue测试实例</titil>
+    <script src="libs/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!--计数器功能区域-->
+        <div class="input-num">
+            <button @click="sub">
+                -
+            </button>
+            <span>{{  num  }}</span>
+            <button @click="add">
+                +
+            </button>
+        </div>
+       <!--下面这句是广告-->
+        <img src="http://www.itheima.com/images/logo.png" alt="" />
+
+    </div>
+    <script>
+        //创建Vue实例
+        var app = new Vue({
+            el: '#app',
+            data: {
+                num: 1
+            },
+            methods: {
+                add: function () {
+                    if (this.num < 10) {
+                        this.num++;
+                    } else {
+                        alert("最大了");
+                    }
+                },
+                sub: function () {
+                    if(this.num>0){
+                        this.num--;
+                    }else{
+                        alert("最小了");
+                    }
+                    
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

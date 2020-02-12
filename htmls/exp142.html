@@ -1,0 +1,35 @@
+v-model双向绑定
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <titil>vue测试实例</titil>
+  <script src="libs/vue.min.js"></script>
+</head>
+
+<div id = "app">
+<input type = "button" value="修改message" @click="setM">
+<input type ="text" v-model="message" @keyup.enter = "getM">
+<h3>{{ message  }}</h3>
+</div>
+
+<script>
+var app = new Vue({
+    el:'#app',
+    data:{
+        message:"黑马程序员"
+    },
+    methods: {
+        getM:function(){
+            alert(this.message);
+        },
+        setM:function(){
+            this.message = "水煮鱼";
+        }
+    },
+})
+</script>
+<body>
+</body>
+</html>
