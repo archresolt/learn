@@ -4,9 +4,9 @@
     -->
     <ti1></ti1>
     <router-view />
-    <div class="mask">
+    <!-- <div class="mask"> -->
       <!--这里加入注册界面-->
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 

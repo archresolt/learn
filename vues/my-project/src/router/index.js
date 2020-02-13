@@ -9,11 +9,18 @@ import exp2 from '@/components/community/exp2'
 import exp3 from '@/components/trip/exp3'
 import exp4 from '@/components/found/exp4'
 import exp5 from '@/components/Aboutus/exp5'
+import exp6 from '@/components/gallery/exp6'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/gallery/exp6',
+      name: 'gallery',
+      component: exp6,
+    },
     //这里分别注册五个导航的路由
+   
     {
       path: '/index/exp1',
       name: 'index',
