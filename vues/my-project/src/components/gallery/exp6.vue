@@ -222,12 +222,25 @@
 <br><br>
 <dataaliastransfer></dataaliastransfer>
 <br><br>
-
+<typicalform></typicalform>
 <br><br>
-
+<br><br>行内表单
+<inlineform></inlineform>
 <br><br>
-
+<br><br>可对齐表单
+<alignmentform></alignmentform>
 <br><br>
+<br><br>验证表单
+<verifiableform></verifiableform>
+<br><br>
+<br><br>
+<seldefedchekfrom></seldefedchekfrom>
+<br><br>
+<dynamicincreform></dynamicincreform>
+<br><br>
+<numbertypeform></numbertypeform>
+<br><br>
+<sizecontrolform></sizecontrolform>
   </div>
 </template>
 <script>
@@ -317,6 +330,14 @@ import bactransfer from "../bactransfer";
 import srhtransfer from "../srhtransfer";
 import selfdefinedtransfer from "../selfdefinedtransfer";
 import dataaliastransfer from "../dataaliastransfer";
+import typicalform from "../typicalform";
+import inlineform from "../inlineform";
+import alignmentform from "../alignmentform";
+import verifiableform from "../verifiableform";
+import seldefedchekfrom from "../seldefedchekfrom";
+import dynamicincreform from "../dynamicincreform";
+import numbertypeform from  "../numbertypeform";
+import sizecontrolform from "../sizecontrolform";
 // import autoadviceinput from "../autoadviceinput";
 // import disabledinput from "../disabledinput";
 // import canepyinput from "../canepyinput";
@@ -408,7 +429,14 @@ export default {
     srhtransfer:srhtransfer,
     selfdefinedtransfer:selfdefinedtransfer,
     dataaliastransfer:dataaliastransfer,
-    
+    typicalform:typicalform,
+    inlineform:inlineform,
+    alignmentform:alignmentform,
+    verifiableform:verifiableform,
+    seldefedchekfrom:seldefedchekfrom,
+    dynamicincreform:dynamicincreform,
+    numbertypeform:numbertypeform,
+    sizecontrolform:sizecontrolform,
     // autoadviceinput:autoadviceinput,
     // disabledinput:disabledinput,
     // canepyinput:canepyinput,
