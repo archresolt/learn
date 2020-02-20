@@ -241,7 +241,10 @@
 <numbertypeform></numbertypeform>
 <br><br>
 <sizecontrolform></sizecontrolform>
+<br><br>
+ <Retrieveitems></Retrieveitems>
   </div>
+ 
 </template>
 <script>
 import radiogroup from "../radiogroup";
@@ -338,6 +341,7 @@ import seldefedchekfrom from "../seldefedchekfrom";
 import dynamicincreform from "../dynamicincreform";
 import numbertypeform from  "../numbertypeform";
 import sizecontrolform from "../sizecontrolform";
+import Retrieveitems from "../myfirstgallery/Retrieveitems"
 // import autoadviceinput from "../autoadviceinput";
 // import disabledinput from "../disabledinput";
 // import canepyinput from "../canepyinput";
@@ -440,6 +444,7 @@ export default {
     // autoadviceinput:autoadviceinput,
     // disabledinput:disabledinput,
     // canepyinput:canepyinput,
+    Retrieveitems:Retrieveitems,
   }
 };
 </script>
