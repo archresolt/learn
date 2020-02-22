@@ -36,6 +36,12 @@
 </div>
 </template>
 <style scoped>
+.part1 {
+  width: 978px;
+  height: 85px;
+  position: relative;
+  margin-left: 236px;
+}
 .font1{
    font-size: 16px;
   font-family: STSongti-SC-Regular, STSongti-SC;
@@ -68,12 +74,7 @@
   height: 3000px;
   position: relative;
   margin-left: 236px;}
-.part1 {
-  width: 978px;
-  height: 85px;
-  position: relative;
-  margin-left: 236px;
-}
+
 
 .part1-3 {
   position: relative;

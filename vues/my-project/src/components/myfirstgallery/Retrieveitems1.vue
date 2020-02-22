@@ -1,6 +1,6 @@
 <template>
   <div class="part">
-    <div class="part1"></div>
+    <!-- <div class="part1"></div> -->
 
     <div class="part0">
       <!-- <div class="part1-1">
@@ -77,11 +77,15 @@
   margin-left: 38px;
 }
 .font3 {
-  font-size: 16px;
+font-size: 16px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: rgba(144, 144, 144, 1);
-  line-height: 22px;
+
+  line-height: 42px;
+  position: relative;
+  float: left;
+  margin-left: 38px;
 }
 
 .part1-1 {
@@ -98,7 +102,7 @@
 }
 .part {
   width: 1440px;
-  height: 537px;
+  height: 474px;
   background: rgba(248, 249, 250, 1);
   margin: 0 auto;
 }
@@ -107,7 +111,7 @@
   height: 411px;
   background: rgba(248, 249, 250, 1);
   margin-left: 150px;
-  margin-top: 126px;
+
   position: absolute;
 }
 .part1 {
