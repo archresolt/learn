@@ -19,6 +19,7 @@
   width: 366px;
   height: 340px;
   margin-left: 20px;
+    float: left;
 }
 .part1 {
   width: 366px;
@@ -66,15 +67,17 @@
 }
 </style>
 <script>
+
 export default {
+    props:['trip1'], 
   data() {
     return {
-      trip1: {
-        pho: "/static/img/茅草我.d2724ed.png",
-        name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-        type: "度假村｜",
-        price: "￥8766起/人"
-      }
+    //   trip1: {
+    //     pho: "/static/img/茅草我.d2724ed.png",
+    //     name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+    //     type: "度假村｜",
+    //     price: "￥8766起/人"
+    //   }
      
     };
   }

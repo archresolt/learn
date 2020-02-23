@@ -97,7 +97,7 @@
 <style scoped>
 .part3{
   width:1440px;
-  height: 755px;
+  height: 765px;
   margin:0 auto;
 }
         
