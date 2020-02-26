@@ -6,6 +6,7 @@ import hello from '@/components/hello'
 import exp1 from '@/components/index/exp1'
 //import navi from '@/components/navi'
 import exp2 from '@/components/community/exp2'
+import exp0 from '@/components/community/exp0'
 import exp3 from '@/components/trip/exp3'
 import exp4 from '@/components/found/exp4'
 import exp5 from '@/components/Aboutus/exp5'
@@ -35,6 +36,11 @@ export default new Router({
       path: '/community/exp2',
       name: 'community',
       component: exp2,
+    },
+    {
+      path: '/community/exp0',
+      name: 'community',
+      component: exp0,
     },
     {
       path: '/trip/exp3',

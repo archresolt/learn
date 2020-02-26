@@ -14,7 +14,9 @@
     <trip :trip1="item" v-for="item in journey" :key ="item"></trip>
    </div>
     </div>
+
     <!--  -->
+    <pagefooter></pagefooter>
   </div>
 </template>
 <style scoped>
@@ -38,7 +40,7 @@ import Retrieveitems1 from "../myfirstgallery/Retrieveitems1";
 import serachinput from "../myfirstgallery/serachinput";
 import Wholetrip from "../myfirstgallery/Wholetrip";
 import trip from "../myfirstgallery/trip";
-
+import pagefooter from "../pagebottom/pagefooter";
 export default {
   data() {
     return {
@@ -115,7 +117,8 @@ export default {
     Retrieveitems1: Retrieveitems1,
     serachinput: serachinput,
     Wholetrip: Wholetrip,
-    trip: trip
+    trip: trip,
+    pagefooter:pagefooter,
   }
 };
 </script>
