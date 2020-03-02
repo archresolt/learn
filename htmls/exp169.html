@@ -1,0 +1,31 @@
+定义：:first-child选择器用于选取属于其父元素的首个子元素的指定选择器。
+<html>
+    <head>
+<style>
+    p:first-child{
+        background-color:yellow;
+    }
+    .p1{
+        /* outline:red dotted thick; */
+        /* outline:groove  red;   定义3d凹槽轮廓 */
+        outline:outset blue;    
+        /* 定义 3D 凹边轮廓。此效果取决于 outline-color 值。  */
+    }
+
+</style>
+    </head>
+<body>
+<p>这个段落是其父元素的首个子元素</p>
+<h2>欢迎访问我的主页</h2>
+<p>这个段落不是其父元素的首个子元素</p>
+<div>
+    <p>
+        这个段落是其父元素的首个子元素
+    </p>
+    <p  class="p1"  >
+        这个段落不是欺负元素的首个子元素
+    </p>
+</div>
+<p><b>注释：</b>对于ie8以及更早的浏览器中的：first-child，必须声明<!DOCTYPE></p>
+</body>
+    </html>

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .part1 {
+            width: 1440px;
+            height: 500px;
+            margin: 0 auto;
+            background: yellow;
+
+        }
+
+        .part2 {
+            margin-top: 40px;
+            width: 500px;
+            height: 400px;
+            margin-left: 400px;
+            background: cyan;
+        }
+
+        .part3 {
+            margin-top: 10px;
+            margin-left: 40px;
+            width: 300px;
+            height: 360px;
+            background: white;
+        }
+        .part4 {
+            margin-top: 10px;
+            margin-left: 40px;
+            width: 200px;
+            height: 300px;
+            background: blue;
+        }
+        .part5 {
+            margin-top: 10px;
+            margin-left: 40px;
+            width: 150px;
+            height: 200px;
+            background:yellow;
+        }
+    </style>
+    <script>
+        // $(".part2").remove();
+        // 删除第三部分的子元素，保留第三部分
+        // $(".part3").empty();
+        //删除所有类名为font1的<p>元素
+            // $("p").remove(".font1")
+        
+            // $(".part5").empty();
+        
+        // //删除第五部分的类名为font的元素,注意下面的这种写法是失败的
+        // $(".part5").remove(".font1")
+        //应该像这样写
+        // $(".part5 .font1").remove();
+        
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("p").css({"color":"red",
+        //         "font-size":"20px",
+        //         "text-align":"left",});
+        //     })
+        // })
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css(
+                    {"color":"green",}
+                )
+            })
+        })
+
+        //在css中调用函数写法
+        //例如：将span中的文字字体放大到当前字体的两倍
+        // $("span").css("font-size",function(i,curr){
+        //     return 2*parseInt(curr);
+        // })
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css(
+                    {"color":"green",}
+                )
+            })
+        })
+        
+        </script>
+</head>
+
+<body>
+    <div class="part1">
+        <div class="part2">
+            <span>第二部分的文档</span>
+            <div class="part3">
+                <p class="font1">第三部分的文档</p>
+                <div class="part4">
+                    <p class="font2">第4部分的文档</p>
+                    <div class="part5">
+                        <p class="font1">第5部分的文档</p>
+                        <p class="font2">第5部分的第二份文档</p>
+                        <button>设置所有p元素的颜色属性</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

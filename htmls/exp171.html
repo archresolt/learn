@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .p0 {
+            background: green;
+            width: 50%;
+            height: 50%;
+        }
+
+        .p1 {
+            background: yellow;
+            /* width: 300px;
+            height: 300px; */
+            width: 50%;
+            height: 50%;
+        }
+
+        .p2 {
+            background: red;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>这是一段文字</p>
+    <div class="p0">
+        <div class="p1">
+            <div class="p2">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // $("p").bind("click",function(){
+        //     alert($(this).text());
+        // })
+
+
+        //通过设置event.stopPropagation();来阻止事件冒泡
+        // $(".p0").bind("click", function () {
+        //     $("p").after('在后面加上一段文字')
+        // }),
+        //     $(".p1").bind("click", function (e) {
+        //         $(".p1").append('在这个快里面加上一段文字');
+        //         e.stopPropagation();
+        //         //阻止事件冒泡
+        //     }),
+        //     $(".p2").bind("click", function (y) {
+               
+        //         y.stopPropagation();
+        //     })
+
+
+            //通过设置return false来实现阻止冒泡
+            $(".p0").bind("click", function () {
+            $("p").after('在后面加上一段文字')
+        }),
+            $(".p1").bind("click", function (e) {
+                $(".p1").append('在这个快里面加上一段文字');
+                return false;
+                //阻止事件冒泡
+            }),
+            $(".p2").bind("click", function (y) {
+               
+                y.stopPropagation();
+            })
+    </script>
+</body>
+
+</html>

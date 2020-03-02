@@ -1,0 +1,25 @@
+jquery,bind()方法向被选元素添加一个或多个事件处理程序，以及当时事件发生运行的函数。
+
+<html>
+    <head>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("p").bind("mouseover mouseout",function(){
+                $("p").toggleClass("intro");
+            });
+            
+        });
+    </script>
+    <style>
+        .intro{
+            font-size: 150%;
+            color:red;
+        }
+    </style>
+    </head>
+    <body>
+<p>请将鼠标移动到该段落上</p>
+    </body>
+</html>

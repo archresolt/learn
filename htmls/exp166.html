@@ -1,0 +1,24 @@
+如何向一个自定义命名的事件处理程序，传递数据
+<html>
+    <head>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            // 这里的e是event，事件的意思
+            function handleName(e){
+                alert(e.data.msg);
+            }
+            $(document).ready(function(){
+                $("p").bind("click",{msg:"你刚刚点击了"},handleName)
+            });
+           
+        //   事件绑定函数的三种方法
+           a.on('click',func)
+           a.click(func)
+           a.bind('click',args,func)
+
+        </script>
+    </head>
+    <body>
+<p>点我</p>
+    </body>
+</html>

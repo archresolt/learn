@@ -1,0 +1,46 @@
+jquery添加新的html内容
+<html>
+
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .part1{
+            width: 500px;
+            height: 100px;
+            background: cornsilk;
+        }
+      .s1{
+          font-size: 18px;
+          color: black;
+
+      }
+    </style>
+</head>
+
+<body>
+    <div class="part1">
+<span class="s1">这里是一段文字</span>
+</div>
+    <script>
+    //  $(".s1").after('<span class = "s2">这是另一段文字</span>')
+    // $(".s2").after('<span class = "s3">这是第三段文字</span>')
+    $(".part1").after('<div class= "part2">这里是一个快元素</div>')
+    $(".part1").append('<div class= "part2">这里是另外一个快,加载在块part1的内部结尾</div>' )
+    $(".part1").prepend('<div class = "part3">这里是另另外一个快，加载在块part1的内部开头</div>')
+   $(".part1").after("在元素后面添加文本")
+   $(".part1").before("在元素前面添加文本")
+   
+   function appendText(){
+       var text1 = "<p>文</p>";
+       var text2 = $("<p></p>").text("本");
+       var text3 = document.createElement("文本");
+    //    $(".part2").apppend(text1,text2);
+   }
+    </script>
+
+  
+
+</body>
+
+
+</html>
