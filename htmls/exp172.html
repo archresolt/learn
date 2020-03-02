@@ -1,0 +1,28 @@
+有的时候点击提交按钮，会有一些默认事件，比如天转到别的界面。但是如果
+没有通过验证的话，就不应该跳转。这个时候可以通过设置event。preventDefault（）；；
+阻止事件的默认行为（表单提交）
+<br>
+<html>
+    <head>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>        
+<script>
+$(function(){
+    $("#sub").click(function(event){
+        //获取元素的值，val（）方法返回或设置备选元素的值
+        var username = $("#username").val();
+        //判断值是否为空
+        if (username == ""){
+            
+        }
+    })
+})
+</script>
+    </head>
+    <body>
+        <from action ="test.html">
+            用户名：<input type = "text" id = "username"/>
+            <br>
+            <input type = "submit" value = "提交" id = "sub"/>
+        </from>
+    </body>
+</html>

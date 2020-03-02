@@ -1,0 +1,25 @@
+jquery 如何使用事件映射来向被选元素添加一些事件/函数。
+<html>
+    <head>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").bind({
+                click:function(){
+                    $("p").slideToggle();
+                },
+                mouseover:function(){
+                    $("body").css("background-color","red")
+                },
+                mouseout:function(){
+                    $("body").css("background-color","blue");
+                }
+            });
+        })
+    </script>
+    </head>
+    <body>
+<p>这是一个段落。</p>
+<button>点击我</button>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+上下居中方法
+<html>
+    <head>
+    <style>
+/*方法一 
+.part1{
+    position: relative;
+    width:560px;
+    height:400px;
+    background: blue;
+}
+.part2{
+    position:absolute;
+    width:300px;
+    height: 200px;
+    bottom:0;
+    top:0;
+    margin:auto;
+    background: red; 
+}*/
+
+/* 方法二
+.part1{
+   display:table-cell;
+   vertical-align: middle;
+    width:560px;
+    height:400px;
+    background: blue;
+}
+.part2{
+    width:300px;
+    height: 200px;
+    background: red; 
+} */
+
+/* 方法三 */
+.part1{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width:560px;
+    height:400px;
+    background: blue;
+}
+.part2{
+    width:300px;
+    height: 200px;
+    background: red; 
+} 
+    </style>
+    </head>
+    <body>
+        
+            <div class="part1">
+            <div class="part2">
+
+            </div>
+        </div>
+    </body>
+</html>
