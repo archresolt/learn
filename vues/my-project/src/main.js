@@ -5,6 +5,9 @@ import App from './App'//App为变量名
 import router from './router'
 import ElemnetUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+//引入axios用于访问后台，axios和vue.resource还有ajax一样，都是用于访问后台服务的
+import axios from 'axios'
+window.axios=axios;
 Vue.config.productionTip = false
 
 Vue.use(ElemnetUi)
