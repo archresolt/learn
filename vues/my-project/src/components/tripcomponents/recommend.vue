@@ -1,7 +1,7 @@
 <template>
   <div class="part0">
     <div class="part1">
-      <span class="font1">{{textinserts.name}}</span>
+      <span class="font1">{{name}}</span>
     </div>
     <!-- <div class="part2">
 <span class="font2" >298</span>
@@ -54,6 +54,6 @@
 </style>
 <script>
 export default {
-  props: ["textinserts"]
+  props: ["name"]
 };
 </script>

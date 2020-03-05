@@ -1,39 +1,84 @@
 <template>
   <div class="part0">
-    <div class="part2"></div>
-    <div class="part1">
-      <div class="part1-1">
-        <div class="part1-1-1 font1">菲律宾·阿尼洛·Halo度假村 | 一价全包海景房 超高性价比</div>
-        <div class="part1-1-2">￥8766起/人</div>
+    <div
+      class="part1"
+      v-for="(item,i) in contents"
+      :key="i"
+      @mouseenter.stop="setVisiable(i,true)"
+      @mouseleave.stop="setVisiable(i,false)"
+    >
+      <img :src="item.pho" style="position:absolute;left:0;top:0;width:100%;height:100%;" />
+
+      <div class="part1-1" :style="visiableStyle(i)">
+        <div class="part1-1-1 font1">{{item.name}}</div>
+        <div class="part1-1-2">￥{{item.price}}起/人</div>
         <div class="part1-1-10">
           <div class="img1">
             <img src="@/assets/image/检索切图/主题 copy.png" />
           </div>
-          <span class="font3">船宿 |</span>
+          <span class="font3">{{item.type}} |</span>
           <div class="img2">
             <img src="@/assets/image/检索切图/Shape.png" />
           </div>
-          <span class="font3">马来西亚</span>
+          <span class="font3">{{item.address}}</span>
         </div>
       </div>
     </div>
-
-    <!-- <div class="part1-3">
-        <div class="img1">
-          <img src="@/assets/image/检索切图/Shape.png" />
-        </div>
-      <span class="font2">  {{trip1.address}}</span>
-        </div>
-    <div class="part1-4">
-           <div class="img2">
-          <img src="@/assets/image/检索切图/主题 copy.png" />
-           </div>
-      <span class="font3">{{trip1.type}}</span>
-      <span class="font4">{{trip1.price}}</span>
-    </div>-->
-    <div class="part2"></div>
   </div>
 </template>
+<script>
+export default {
+  props: ["contents"],
+  data() {
+    return {
+      visiables: [false, false, false]
+    };
+  },
+  computed: {
+    visiableStyle() {
+      return i => {
+        return {
+          opacity: this.visiables[i] ? 0.5 : 0
+        };
+      };
+    },
+    visiable() {
+      return i => {
+        return this.visiables[i];
+      };
+    }
+  },
+  methods: {
+    setVisiable(i, flag) {
+      // this.visiables[i]=flag;
+      this.$set(this.visiables, i, flag);
+    }
+  },
+  //监听指定属性
+  watch: {
+    //等价于 this.$watch('visiables',()=>{})
+    visiables() {
+      console.log("visiables变化了");
+    }
+  },
+
+  //下面是生命周期的钩子（hooker），钩子是说在特定生命周期时候执行的函数
+  beforeCreate() {},
+  created() {
+    //这个阶段开始，可以使用data、computed、props里的数据，比如this.visiables
+  },
+  beforeMount() {},
+  mounted() {
+    //这个阶段开始，可以使用dom元素，比如this.$el，this.$refs
+  },
+  updated() {},
+  beforeDestroy() {
+    //这个阶段一般用于清理内存和监听
+  },
+  destroyed() {}
+  //this.$emit,this.$on
+};
+</script>
 <style scoped>
 .font3 {
   font-size: 12px;
@@ -48,7 +93,7 @@
   width: 260px;
   height: 17px;
   position: absolute;
-margin-top: -28px;
+  margin-top: -28px;
   margin-left: 14px;
 }
 .img1 {
@@ -75,21 +120,20 @@ margin-top: -28px;
   width: 1178px;
   height: 230px;
   margin: 0 auto;
-  padding-top:20px;
+  padding-top: 20px;
 }
 .part2 {
   width: 366px;
   height: 230px;
   float: left;
   margin-left: 20px;
-  background-image: url(/static/img/房子.ed42443.png);
 }
 .part1 {
+  position: relative;
   width: 366px;
   height: 230px;
   float: left;
   margin-left: 20px;
-  background-image: url(/static/img/房子.ed42443.png);
 }
 .part1-1 {
   position: absolute;
@@ -97,7 +141,7 @@ margin-top: -28px;
   height: 136px;
   margin-top: 95px;
   background: rgba(0, 0, 0, 1);
-  opacity: 0.5;
+  transition: opacity linear 0.2s;
 }
 .part1-1-1 {
   width: 328px;
@@ -127,6 +171,3 @@ margin-top: -28px;
   text-align: left;
 }
 </style>
-<script>
-export default {};
-</script>

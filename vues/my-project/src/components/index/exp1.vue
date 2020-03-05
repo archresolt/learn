@@ -41,7 +41,8 @@ import serachinput from "../myfirstgallery/serachinput";
 import Wholetrip from "../myfirstgallery/Wholetrip";
 import trip from "../myfirstgallery/trip";
 import pagefooter from "../pagebottom/pagefooter";
-export default {
+
+var a= {
   data() {
     return {
       config1: {
@@ -121,4 +122,5 @@ export default {
     pagefooter:pagefooter,
   }
 };
+export default a;
 </script>

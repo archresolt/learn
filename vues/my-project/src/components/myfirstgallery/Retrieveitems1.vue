@@ -13,7 +13,7 @@
     <div class="font2" v-for = "it in item.classification"  v-bind:key = "it">{{it}}</div>
 </div>
       </div>-->
-      <div class="part0-1" v-for="item in theme" v-bind:key="item">
+      <div class="part0-1"  v-for="item in theme" v-bind:key="item" :class= "this.type == 'item' ?'bakgrud1':'bakgrud2'"  @click="changeit(item)" >
         <span class="font1">{{item.name}}</span>
         <div class="font2" v-for="it in item.classification" v-bind:key="it">{{it}}</div>
       </div>
@@ -32,6 +32,12 @@
   </div>
 </template>
 <style scoped>
+.bakgrud1{
+  background:red;
+}
+.bakgrud2{
+  background:white;
+}
 .part0-1 {
   width: 1290px;
   height: 52px;
@@ -126,8 +132,16 @@ font-size: 16px;
 </style>
 <script>
 export default {
+  methods:{
+ changeit:function(item){
+this.type = item;
+  },
+  },
+ 
   data() {
     return {
+      type:1,
+      contry:2,
       theme: [
         {
           name: "主题",

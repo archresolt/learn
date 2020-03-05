@@ -1,27 +1,29 @@
 <template>
 
     <div class="part2">
-      <div class="part2-1">
+      <!-- :class="mus===0?'img2':'img1' " @mouseenter.stop="page=0" -->
+      <div @click.stop="select('boat')" class="part2-1" :class="attractionstype === 'boat'?'img2':'img1' " >
           <img src = "@/assets/image/行程首页切图/58a29f1e15374.png"/>
         <div class="part2-1-4">船宿</div>
       </div>
-      <div class="part2-2">
+      <div @click.stop="select('vallage')" class="part2-2"  :class= "attractionstype === 'vallage'? 'img2':'img1'">
+
            <img src = "@/assets/image/行程首页切图/277344_wx.png"/>
         <div class="part2-1-3" >度假村</div>
       </div>
-      <div class="part2-3">
-           <img src = "@/assets/image/行程首页切图/benpao.png"/>
+      <div @click.stop="select('oneday')" class="part2-3"  :class= "attractionstype === 'oneday'? 'img2':'img1'">
+           <img src = "@/assets/image/行程首页切图/Group 2.png"/>
         <div class="part2-1-3">一日游</div>
       </div>
-      <div class="part2-4">
+      <div @click.stop="select('dive')" class="part2-4" :class= "attractionstype === 'dive'? 'img2':'img1'">
            <img src = "@/assets/image/行程首页切图/385876_wx.png"/>
         <div class="part2-1-3">潜导团</div>
       </div>
-      <div class="part2-5">
+      <div @click.stop="select('action')" class="part2-5" :class= "attractionstype === 'action'? 'img2':'img1'">
            <img src = "@/assets/image/行程首页切图/163513.png"/>
         <div class="part2-1-4">活动</div>
       </div>
-      <div class="part2-6">
+      <div @click.stop="select('free')" class="part2-6" :class= "attractionstype === 'free'? 'img2':'img1'">
            <img src = "@/assets/image/行程首页切图/500617404_banner.png"/>
         <div class="part2-1-3">自由行</div>
       </div>
@@ -29,6 +31,14 @@
 
 </template>
 <style scoped>
+.img1{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+.img2{
+    width: 168px;
+  height: 168px;
+}
 .part {
   margin: 0 auto;
   width: 1440px;
@@ -141,5 +151,20 @@
 }
 </style>
 <script>
-export default {};
+export default {
+   props: ['attractionstype'],
+  data() {
+    return {
+      mus: 0
+    };
+  },
+  methods:{
+    colordown(){
+this.mus=0
+    },
+    select(type){
+      this.$emit('change',type);
+    }
+  }
+};
 </script>

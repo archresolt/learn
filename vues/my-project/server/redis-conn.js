@@ -13,7 +13,7 @@ var db = {
     ip: '127.0.0.1'
 };
 //启动redis服务
-child.exec('/redis/redis-server.exe', function (err, sto) {
+child.exec('call "./redis/redis-server.exe" ./redis/redis.windows.conf', function (err, sto) {
     console.log('--redis启动成功', err, sto);
 
 
