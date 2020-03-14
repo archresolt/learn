@@ -61,7 +61,7 @@ var a= {
           price: "￥8766起/人"
         },
         {
-          name: "梅鲁利浮岛度假村",
+          name: "日本浮岛度假村",
           pho: "/static/img/房子.ed42443.png",
           address: "斐济/一级行政区/二级行政区",
           type: "度假村",

@@ -1,70 +1,42 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>名称：
-    <el-input v-model="name"></el-input>年龄：
-    <el-input v-model="age"></el-input>
-    <el-button @click="save">保存</el-button>
-    <hr />
-    <el-button @click="refresh">刷新</el-button>
-    <div>
-      {{
-      userList
-      }}
-    </div>
+    <el-table :data="tableData" style="width:100%">
+      <el-table-column prop="date" label="日期" width="180"></el-table-column>
+      <el-table-column prop="name" label="姓名" width="180"></el-table-column>
+      <el-table-column prop="address" label="地址" width="180"></el-table-column>
+    </el-table>
+
+    <el-button @click="refershtable()">刷新列表</el-button>
+      <el-button @click="">增加一个列</el-button>
+      <el-button @click="">删除一个列</el-button>
+         <el-button @click="">修改数据</el-button>
   </div>
 </template>
 
 <script>
+const a = 1;
 export default {
-  name: "HelloWorld",
-  data() {
-    return {
-      msg: "欢迎大家 这是我的第一个vue界面 ",
-      name: null,
-      age: null,
-      userList: []
-    };
+  data(){
+    return{
+      tableData:[
+      
+      ]
+    }
   },
-  methods: {
-    refresh() {
+created(){
+this.refershtable();
+},
+  methods:{
+    refershtable(){
       axios
-        .post("/api/hgetall", { key: "userList" })
-        .then(resp => {
-          this.userList = resp.data;
-        })
-        .catch(resp => {
-          console.error(resp);
-        });
-    },
-    save() {
-      //axios在main.js里引入，并且注册到了全局window下
-      //axios.get('/api')意思是访问http://localhost:8080/api，该api在config/index.js里配置为访问localhost:3001端口，也就是npm run server启动的服务器
-      axios
-        .post("/api/hset", {
-          key: "userList",
-          field: this.name,
-          data: {
-            name: this.name,
-            age: this.age
-          }
-        })
-        .then(resp => {
-          if (resp.data.errcode) {
-            this.alert(resp.data.msg);
-          } else {
-            this.$notify({
-              title: "提示",
-              message: "保存成功",
-              duration: 0
-            });
-          }
-        })
-        .catch(resp => {
-          console.error(resp);
-        });
+      .post("/api/getTableData")
+      .then(abc =>{
+        this.tableData = abc.data ;
+      })
     }
   }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

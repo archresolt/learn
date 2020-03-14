@@ -1,0 +1,54 @@
+.indexbox{
+  
+    display: inline-block;
+    width:1052px;
+    background:blue;
+}
+.equip_infobox_w{
+    width:830px;
+    background:yellow;
+   
+   
+}
+.equip_infobox_h{
+    height: 3254px;
+}
+
+
+.nov23_w{
+    width:830px;
+    background: red;
+}
+.nov23_h{
+    height:148px;
+}
+.right_sidebarbox{
+    width:188px;
+height:434px;
+}
+.logopointbox{
+    width:30px;
+    height: 30px;
+
+}
+.oneequipbox{
+    width:600px;
+    height: 300px;
+    background-color: violet;
+}
+.equip_imgbox{
+    width: 600px;
+    height: 230px;
+    margin-left: -228px;
+}
+.equip_namebox{
+    width:439px;
+    height: 68px;
+    padding:30px 10px 10px 49px;
+    margin-left: -200px;
+}
+.equip_pricebox{
+    width: 79px;
+    height:28 px;
+    /* margin-left:-90px ; */
+}

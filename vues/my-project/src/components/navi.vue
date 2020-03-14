@@ -23,7 +23,7 @@
                   </span>
             </div>
             <div class="part1-p1-p2">
-                <span   @click="jump('/found/exp4','3')" :class="current==3?'part1-p1-p3-font':'part1-p1-p2-font'">
+                <span   @click="jump('/a','3')" :class="current==3?'part1-p1-p3-font':'part1-p1-p2-font'">
                   发现
                   </span>
             </div>
@@ -59,10 +59,10 @@ export default {
   },
    methods: {
 
-    jump(it,hi){
-      this.$router.push(it)
+    jump(path,number){
+      this.$router.push(path)
       //方法体
-      this.current = hi;
+      this.current = number;
     },
     
   },

@@ -8,7 +8,7 @@ import exp1 from '@/components/index/exp1'
 import exp2 from '@/components/community/exp2'
 import exp0 from '@/components/community/exp0'
 import exp3 from '@/components/trip/exp3'
-import exp4 from '@/components/found/exp4'
+import aaa from '@/components/found/exp4'
 import exp5 from '@/components/Aboutus/exp5'
 import exp6 from '@/components/gallery/exp6'
 Vue.use(Router)
@@ -48,9 +48,9 @@ export default new Router({
       component: exp3,
     },
     {
-      path: '/found/exp4',
+      path: '/a',
       name: 'found',
-      component: exp4,
+      component: aaa,
     },
     {
       path: '/Aboutus/exp5',

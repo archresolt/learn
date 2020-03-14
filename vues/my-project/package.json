@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "server": "node server"
+    "server": "node server",
+    "relation":"Ping www.baidu.com"
   },
   "dependencies": {
     "axios": "^0.19.2",

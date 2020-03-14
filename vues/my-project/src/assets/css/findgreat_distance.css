@@ -1,0 +1,47 @@
+.index{
+   
+    /* height: ; */
+    margin:0 auto;
+    padding-left:150px ;
+padding-right:238px;
+background:blue;
+}
+/* .equip_info{
+   
+   
+   
+} */
+.oneequip{
+    padding-left: 115px;
+    padding-right: 115px;
+}
+.right_sidebar{
+
+position: relative;
+float:right;
+
+}
+.logopoint{
+    margin-left: 57px;
+    margin-top:48px;
+    position: relative;
+
+}
+.findgreat{
+    width:75px;
+    height: 25px;
+
+}
+
+.equip_img{
+    padding-right: 115px;
+    padding-left: 115px;
+}
+.equip_name{
+    float: left;
+    position: relative;
+}
+.equip_price{
+    
+}
+/* ../../assets/css/ */

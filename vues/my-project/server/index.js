@@ -1,7 +1,7 @@
 /**
 * 使用npm run server来启动
 */
-//引入数据库模组
+//引入数据库模组，在后台import是用不了的，用的均是 require
 const client = require('./redis-conn');
 //引入nodejs的http模组
 const http = require('http');
@@ -50,12 +50,13 @@ const server = http.createServer(function (req, res) {
     // 在end事件触发后，通过querystring.parse将post解析为真正的POST请求格式，然后向客户端返回。
     req.on('end', function () {
         console.log('请求字段', post)
-        let msg = JSON.parse(post);
+        let msg = post.trim().startsWith("{") ? JSON.parse(post) : post;
         if (req.url == '/hset') {
             d = msg.data;
             if (typeof (d) == 'object') {
                 d = JSON.stringify(d);
             }
+            // 这里的client是redis客户端，该客户端用来连接数据库
             client.hset(msg.key, msg.field, d, redisResponse);
         }
         else if (req.url == '/hmset') {
@@ -64,6 +65,30 @@ const server = http.createServer(function (req, res) {
             client.hgetall(msg.key, redisResponse);
         } else if (req.url == '/hget') {
             client.hget(msg.key, msg.field, redisResponse);
+        } else if (req.url == "/text") {
+            res.write("我接到了post " + post);
+            res.end()
+        } else if (req.url == "/getTableData") {
+            let data = [{
+                date: '2016-05-02',
+                name: '王小虎',
+                address: '上海市普陀区金沙江路 1518 弄'
+            }, {
+                date: '2016-05-04',
+                name: '王小虎',
+                address: '上海市普陀区金沙江路 1517 弄'
+            }, {
+                date: '2016-05-01',
+                name: '王小虎',
+                address: '上海市普陀区金沙江路 1519 弄'
+            }, {
+                date: '2016-05-03',
+                name: '王小虎',
+                address: '上海市普陀区金沙江路 1516 弄'
+            }];
+        
+            res.write(JSON.stringify(data));
+            res.end();
         } else {
             httpError("无法响应该请求" + req.url);
         }

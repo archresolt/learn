@@ -42,6 +42,7 @@
               <div class="part3-4">
                 <img src="@/assets/image/行程首页切图/Shape.png" />
               </div>
+              
               <div class="part3-5">{{content1.address}}</div>
               <div class="part3-6"></div>
               <div class="part3-7">{{content1.description}}</div>

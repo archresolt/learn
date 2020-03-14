@@ -12,11 +12,11 @@
 
 <script>
 //这里导入一个导航栏组件
-import navi from "@/components/navi";
+import didi from "@/components/navi";
 export default {
   //这里注册导航栏组件
 
-  components: { ti1: navi },
+  components: { ti1: didi },
   name: "navi"
 };
 </script>
