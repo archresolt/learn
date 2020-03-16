@@ -1,13 +1,11 @@
 <template>
-  <div id="app">
-    <!--这里加入一个导航栏
-    -->
-    <ti1></ti1>
-    <router-view />
-    <!-- <div class="mask"> -->
-      <!--这里加入注册界面-->
-    <!-- </div> -->
-  </div>
+
+    <div id="app">
+      <!--这里加入一个导航栏
+      -->
+      <ti1></ti1>
+      <router-view />
+    </div>
 </template>
 
 <script>

@@ -5,12 +5,12 @@ import hello from '@/components/hello'
 //这里分别导入五个对应页面
 import exp1 from '@/components/index/exp1'
 //import navi from '@/components/navi'
-import exp2 from '@/components/community/exp2'
+import ddd from '@/components/community/exp2'
 import exp0 from '@/components/community/exp0'
 import exp3 from '@/components/trip/exp3'
 import aaa from '@/components/found/exp4'
 import exp5 from '@/components/Aboutus/exp5'
-import exp6 from '@/components/gallery/exp6'
+import sg from '@/components/gallery/exp6'
 Vue.use(Router)
 
 export default new Router({
@@ -18,7 +18,7 @@ export default new Router({
     {
       path: '/gallery/exp6',
       name: 'gallery',
-      component: exp6,
+      component: sg,
     },
     //这里分别注册五个导航的路由
    
@@ -35,7 +35,7 @@ export default new Router({
     {
       path: '/community/exp2',
       name: 'community',
-      component: exp2,
+      component: ddd,
     },
     {
       path: '/community/exp0',
@@ -48,7 +48,11 @@ export default new Router({
       component: exp3,
     },
     {
+<<<<<<< HEAD
+      path: '/caiyu',
+=======
       path: '/a',
+>>>>>>> d7e2d672f82cf3ee5ec33978b547611b2a5802ff
       name: 'found',
       component: aaa,
     },
