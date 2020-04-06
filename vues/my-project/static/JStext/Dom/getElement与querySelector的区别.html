@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8";>
+    </head>
+    <body>
+<div>我是第一个</div>
+<div>我是第2个</div>
+<div>我是第3个</div>
+<div>我是第4个</div>
+<div>我是第5个</div>
+<div>我是第6个</div>
+
+<script>
+    var divs = document.getElementsByTagName('div');
+    console.log(divs);
+    var divs2 = document.querySelectorAll('div');
+    console.log(divs2);
+
+    // 创建一个新的div
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML = '我是新的div';
+    document.body.append(newDiv);
+
+    console.log(divs);
+    console.log(divs2);
+    // 从上面打印的结果可以看出两者的区别，getElementBy是动态的，当元素的内容改变了，获取的元素节点内容也随之改变。
+    // 然而，querySelector是不变的。
+</script>
+    </body>
+</html>

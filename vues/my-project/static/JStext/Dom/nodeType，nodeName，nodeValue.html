@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div type="checkbox" id="box" name="habbit">这里是id为box的块里面的内容</div>    <!--这个注释节点可以被拿到吗-->
+
+    <script>
+        // 注意：所有节点的typeof都是object
+        
+      /*  1，nodeType属性
+        元素节点：1
+        属性节点：2
+           文本节点：3
+        注释节点:8
+        文档节点：9（即document的节点类型）
+       
+*/
+/*     2,nodeName属性：获取节点的名称
+元素节点：元素名称
+属性节点：属性名称
+文本节点：#text
+注释节点：#comment
+文档节点：#document
+*/
+/*     2,nodeValue属性：获取节点的值
+元素节点：null
+属性节点：属性值
+文本节点：文本内容
+注释节点：注释内容
+文档节点：null
+*/
+//元素节点
+// 如果获取的对象是元素节点，则nodeType返回的值是一
+var obj = document.querySelector('#box');
+        console.log(obj.nodeType);
+        
+        console.log(obj.nodeName);
+        console.log(obj.nodeValue);
+        console.log('----------------------')
+
+        // 属性节点
+        var attr = obj.getAttributeNode('id');
+        console.log(attr);
+        console.log(typeof attr);
+      
+
+        // 看一下属性节点的nodeType属性
+        console.log(attr.nodeType);
+        console.log(attr.nodeName);
+
+        console.log('----------------------')
+        // 文本节点
+        var txt = obj.firstChild;
+        console.log(txt.nodeType);
+        console.log(txt.nodeName);
+        console.log('----------------------')
+        //注释节点
+        var comment = obj.nextSibling;
+        console.log(comment);
+        console.log(comment.nodeType);
+        console.log(comment.nodeName);
+        console.log('----------------------')
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+对象属性的遍历的两个方法
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        // 对象属性的遍历：for in;
+        // for (var 变量 in 数组名称){
+
+        // }
+var obj = {
+    a:1,
+    b:2,
+    c:4,
+    d:6,
+};
+for (var pro in obj){
+    console.log(pro + "...." + obj[pro]);
+}
+    // 利用Object.keys方法获取对象的所有属性，格式为object.keys(对象名称);
+    // 返回一个对象属性名的数组
+    var keys = Object.keys(obj);
+    console.log(keys);
+    for(var i = 0;i < keys.length;i++){
+        console.log(keys[i] + "...." + obj[keys[i]])
+    }
+
+        </script>
+    </body>
+
+    </html>

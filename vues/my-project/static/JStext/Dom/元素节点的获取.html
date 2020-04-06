@@ -1,0 +1,40 @@
+<!-- 元素节点的获取的六种方法 -->
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <script>
+        //1 通过标签的id属性获取元素
+        document.getElementsById(参数)
+        // 注意：
+        // 1)参数不需要加#
+        // 2）id值相同时只能获取第一个
+        // 3）参数区分大小写
+
+        // 2 通过标签名来获取元素（类似数组）
+        document.getElementsByTagName(参数)
+        // 注意：
+        // 1)参数不区分大小写
+        // 2)返回值为“伪数组”,可以通过下标获取其中某个元素
+
+        // 3 通过标签的name属性来获取元素（类似数组）
+
+        // 4 通过标签的class属性来获取元素
+        //（数组），有浏览器兼容性，主要是ie8以下
+        var list = document.getElementsByClassName('sty');
+        //5 通过css选择器获取页面元素
+        var objs = document.querySelector('div,p');
+        console.log(objs);
+        //6 通过css选择器获取页面元素
+        var objs = document.querySelectorAll('div,p');
+        console.log(objs);
+
+    </script>
+</body>
+
+</html>

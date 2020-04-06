@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var arr = [1,2,3,4,5,6,7,8];
+            var res = arr.filter(function(val){
+                return val >5;
+            });
+            console.log(res);
+
+            // 匿名自执行函数：没有名称而且不用手动调用的函数，通常格式如下
+            // 1.没有参数，无返回值的匿名自执行函数
+            // (function(){
+            //     函数体;
+            // })
+            (function(){
+                console.log('hello');
+            })();
+ 
+            // 2.有参数，没有返回值的匿名自执行函数
+            // eg，
+            // 定义一个匿名自执行函数，求两个数的和
+            (function(num1,num2){
+                var sum;
+                sum = num1+num2;
+                console.log(sum);
+            })(100,200);
+
+              // 3.有参数，有返回值的匿名自执行函数
+              var a =  (function(num1,num2){
+                var sum;
+                sum = num1+num2;
+               return sum;
+            })(100,200);
+
+            // 为什么要使用匿名自执行函数：目的是创建块级的作用域
+        </script>
+    </body>
+</html>

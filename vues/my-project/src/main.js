@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 //引入axios用于访问后台，axios和vue.resource还有ajax一样，都是用于访问后台服务的
 import axios from 'axios'
 window.axios=axios;
+window.Vue=Vue;
 Vue.config.productionTip = false
 
 Vue.use(ElemnetUi)

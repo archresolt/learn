@@ -2,7 +2,7 @@
   <div class="part0">
     <div class="part1">
       <!-- @/assets/image/行程首页切图/茅草我.png -->
-      <img :src = "trip1.pho" width="366px" height="230px" />
+      <img :src="trip1.pho" width="366px" height="230px" />
     </div>
     <div class="part2">{{trip1.name}}</div>
     <div class="part3">
@@ -10,7 +10,9 @@
         <img src="@/assets/image/检索切图/主题 copy.png" />
       </div>
       <span class="font1">{{trip1.type}}</span>
+      <span class="font2" style="font-size:12px ;">￥</span>
       <span class="font2">{{trip1.price}}</span>
+      <span class="font2" style="font-size: 12px;">起/人</span>
     </div>
   </div>
 </template>
@@ -19,7 +21,7 @@
   width: 366px;
   height: 340px;
   margin-left: 20px;
-    float: left;
+  float: left;
 }
 .part1 {
   width: 366px;
@@ -47,7 +49,7 @@
   color: rgba(144, 144, 144, 1);
   line-height: 36px;
   float: left;
-   margin-left: 10px;
+  margin-left: 10px;
 }
 .font2 {
   font-size: 16px;
@@ -67,18 +69,16 @@
 }
 </style>
 <script>
-
 export default {
-    props:['trip1'], 
+  props: ["trip1"],
   data() {
     return {
-    //   trip1: {
-    //     pho: "/static/img/茅草我.d2724ed.png",
-    //     name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-    //     type: "度假村｜",
-    //     price: "￥8766起/人"
-    //   }
-     
+      //   trip1: {
+      //     pho: "/static/img/茅草我.d2724ed.png",
+      //     name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+      //     type: "度假村｜",
+      //     price: "￥8766起/人"
+      //   }
     };
   }
 };

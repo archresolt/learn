@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headphotos :attractionstype ="active" @change="typeChanged"></headphotos>
+    <headphotos :attractionstype="active" @change="typeChanged"></headphotos>
     <recommend :name="`为你推荐`"></recommend>
     <!-- 图文景点，由于是固定的两个，所以一个组件解决 -->
     <imagetexts :contents="imageList1"></imagetexts>
@@ -33,7 +33,6 @@ import popdestination from "../tripcomponents/popdestination";
 import photos from "../tripcomponents/photos";
 import viewmore from "../tripcomponents/viewmore";
 export default {
-  
   mounted() {
     //这里之后加载数据，使用axios
     console.log(this);
@@ -55,7 +54,7 @@ export default {
   computed: {
     imageList1() {
       let journeyList = this[this.active];
-      return [journeyList[0], journeyList[1],journeyList[2], journeyList[3]];
+      return [journeyList[0], journeyList[1], journeyList[2], journeyList[3]];
     },
     imageList2() {
       let journeyList = this[this.active];
@@ -65,7 +64,7 @@ export default {
       // this.boat
       // this['boat']
       let journeyList = this[this.active];
-      return journeyList.splice(5,6);
+      return journeyList.splice(5, 6);
     }
   },
   data() {
@@ -74,7 +73,7 @@ export default {
       boat: [
         {
           name: "印度尼西亚·普吉岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "普吉岛",
+          address: "普吉岛",
           description:
             "普吉岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
@@ -83,7 +82,7 @@ export default {
         },
         {
           name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
@@ -92,7 +91,7 @@ export default {
         },
         {
           name: "日本·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
@@ -101,7 +100,7 @@ export default {
         },
         {
           name: "韩国·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
@@ -110,7 +109,23 @@ export default {
         },
         {
           name: "朝鲜·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+          address: "甲米岛",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "8766",
+          pho: "/static/img/行程首页切图/海底.png"
+        },
+         {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+          {
+          name: "朝鲜·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
@@ -118,318 +133,498 @@ export default {
           pho: "/static/img/行程首页切图/海底.png"
         },
         {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "船宿",
-          price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
         },
-        {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "船宿",
-          price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
+          {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
         },
-        {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+      {
+          name: "朝鲜·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
           price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
+          pho: "/static/img/行程首页切图/海底.png"
         },
-        {
+            {
           name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
+          address: "甲米岛",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "船宿",
           price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
+          pho: "/static/img/行程首页切图/日出.png"
         },
-        {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "船宿",
-          price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
-        },
-        {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "船宿",
-          price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
-        },
-        {
-          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
-          place: "甲米岛",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "船宿",
-          price: "8766",
-          pho: "/static/img/茅草我.d2724ed.png"
-        }
       ],
       vallage: [
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
-          price: "8766"
+          price: "8766",
+          address: "甲米岛"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
+         {
+          name: "印度尼西亚·普吉岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "普吉岛",
+          description:
+            "普吉岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "1766",
+          pho: "/static/img/行程首页切图/船舶.png"
+        },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          name: "马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "8766",
+          pho: "/static/img/行程首页切图/日出.png"
+        },
+        {
+          name: "日本·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "8766",
+          pho: "/static/img/行程首页切图/日出.png"
+        },
+        {
+          name: "韩国·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "8766",
+          pho: "/static/img/行程首页切图/海边.png"
+        },
+        {
+          name: "朝鲜·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船",
+          address: "甲米岛",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "船宿",
+          price: "8766",
+          pho: "/static/img/行程首页切图/海底.png"
+        },
+       {
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
-          price: "8766"
+          price: "8766",
+          address: "甲米岛"
         },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          type: "度假村",
-          price: "8766"
-        }
       ],
       oneday: [
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "菲律宾·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "一日游",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
+         {
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "一日游",
+          type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "static/img/行程首页切图/海边.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/海边.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
-        }
+        },
+            {
+          pho: "static/img/行程首页切图/日出.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+               {
+          pho: "static/img/行程首页切图/日出.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        
       ],
       action: [
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "新加坡·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
+         {
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
-        }
+        },
+       {
+          pho: "static/img/行程首页切图/海底.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "static/img/行程首页切图/海底.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+      
       ],
       dive: [
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "文莱·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
+         {
+          pho: "static/img/行程首页切图/海底.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/海底.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/海底.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
-        }
+        },
+       {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "static/img/行程首页切图/海边.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "static/img/行程首页切图/海边.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+       
       ],
       free: [
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
-          name: "越南·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
-          description:
-            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
-          type: "度假村",
-          price: "8766"
-        },
-        {
-          pho: "/static/img/茅草我.d2724ed.png",
+         {
+          pho: "static/img/行程首页切图/日出.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           description:
             "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
           type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/房子.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "/static/img/行程首页切图/船舶.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/日出.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
         },
         {
-          pho: "/static/img/茅草我.d2724ed.png",
+          pho: "static/img/行程首页切图/日出.png",
           name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
           type: "度假村",
+          address: "甲米岛",
           price: "8766"
-        }
+        },
+    {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          price: "8766",
+          address: "甲米岛"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          description:
+            "甲米岛，位于泰国的南部，与普吉岛隔海相望，犹如天堂般的热带半岛，是安达曼海岸边最美丽的地方…",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+
+        {
+          pho: "static/img/行程首页切图/房子.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
+        {
+          pho: "/static/img/行程首页切图/船舶.png",
+          name: "泰国·甲米·兰塔和谐旅馆 | 丰富水下生物 探秘水下沉船",
+          type: "度假村",
+          address: "甲米岛",
+          price: "8766"
+        },
       ]
     };
   }

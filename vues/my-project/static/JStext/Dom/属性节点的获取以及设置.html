@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="box" name="bird" title="其不知道啊" a="world">
+
+    </div>
+
+    <script>
+        var div = document.querySelector('#box');
+
+        //    1.利用getAttributes方法获取元素节点某个属性的值
+        var res = div.getAttribute('title');
+        console.log(res);
+
+        //    2.利用属性节点的nodeValue获取属性值
+        var arr = div.getAttributeNode('title');//获取属性节点
+        console.log(arr);
+        console.log(arr.nodeValue);
+
+        //    利用点语法，元素节点.属性名称;(常用)
+        console.log(div.title);
+        console.log(div.name);//undefined
+
+        //利用中括号，元素节点['属性名称'];(常用)
+        console.log(div['title']);
+        console.log(div['id']);
+
+        // 注意：点语法后面不可以加变量,然而中括号后面可以加变量
+        var str = 'title';
+        console.log(div.str);//undefined
+        console.log(div[str]);
+
+        //     //自定义属性怎么操作(暂时没搞明白)
+        console.log(div.getAttribute('a'));
+        console.log(div.getAttributeNode('a').nodeValue);
+        console.log(div.a);
+        console.log(div['a']);
+
+        //可以使用setAttribute方法设置属性值，
+        // 格式:元素节点.setAttribute('属性名称','属性值');
+        console.log('------------------------------------------------');
+        div.setAttribute('title', '我也不知道你要刚莫斯啊');
+        div.setAttribute('a', 'world1');//可以支持自定义属性
+        console.log(div.title);
+        console.log(div.a);//undefined
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+将字符串str装换为数组，并操作它
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // var str = "HelloMyWorld";
+
+            // 将字符串str装换为数组
+            // var arr = str.split('');
+
+            // // 遍历数组arr
+            // for (var i = 1;i<arr.length;i++){
+            //     // console.log(arr[i]);
+            //     if(arr[i]>='A'&&arr[i] <= 'Z'){
+            //         // 将大写字母装换为小写字母
+            //         arr[i] = ' ' + arr[i].toLowerCase();
+            //     }
+            // };
+            // console.log(arr);
+
+         // 将数组转换为字符串
+            // var newStr = arr.join(''); //如果在join后面的括号里什么都不加，就默认为添加逗号
+            // console.log(newStr);
+
+
+
+            // 有如下字符串 "11$12$35$5$75$4$848$7$35$4",转成数组求最大值，最小值，平均值并对数组排序;
+            var str = '11$12$35$5$75$4$848$7$35$4';
+
+            // 使用这些数字之间的$符作为分隔符
+            var arr = str.split('$');
+            // 将数组中的类型都转化为数值型
+            for(var i = 0 ;i<arr.length;i++){
+                arr[i] = parseInt(arr[i]);
+            }
+            console.log(arr);
+            
+            // 假设最值
+            var max = arr[0];
+            var min = arr[0];
+
+            var  sum = 0;
+            // 算出最大最小值
+            for(var i = 0;i<arr.length;i++){
+                if(arr[i] > max){
+                    max = arr[i];
+                }if(arr[i]<min){
+                    min = arr[i];
+                }
+                
+            // 求和
+            sum = sum + arr[i];
+            // 等同于 sum+=arr[i]
+            }
+            console.log(max,min);
+           console.log(sum);
+
+        //    求平均值
+           console.log(sum/arr.length);
+           
+
+        </script>
+    </body>
+ 
+  
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    #toTop{
+        width:100px;
+        border:1px solid #ccc;
+        background:red;
+        text-align:center;
+        padding:5px;
+        position:fixed;
+        bottom:10px;
+        right:10px;
+        cursor:pointer;
+
+        color:#333;
+        font-size:11px;
+    }
+  </style>
+ </head>
+ <body>
+  <div style="height:2000px;">http://www.iopenworks.com/Documents/DocumentsList</div>
+
+  <button id = "toTop">回到页首</button>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+        $(document).ready(function () {
+            $('#Documents').addClass("currentPage");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 500 }, 800);
+            });
+        });    
+  </script>
+
+  <div id="toTop">^ Top</div>
+ </body>
+</html>

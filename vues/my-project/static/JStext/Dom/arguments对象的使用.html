@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        /*
+        */
+        
+        <script>
+             /*
+             1.arguments对象：该对象是函数内部的一个对象，即该对象只能在函数里面使用，不可以在外部使用。它的作用是管理函数
+             被调用时传递过来的实参（数据)。他不是一个数组，他是一个伪数组。在管理实参时也是以下标的方式对实参进行了编号，
+             即可以使用arguments[下标]的方式操作实参。
+             2.形参和arguments的关系是:形参和arguments都可以管理实参，而且他们管理的也是同一份数据。在操作实参时可以用形参，
+             也可以用arguments，为了方便通常用的是形参。那么在定义函数是到底需不需要定义形参，如果实参的个数是确定了的，那
+             么我们就定义形参，如果实参的个数是不确定的时候，就不定义形参。改用arguments对象操作。
+             3.arguments的对象包含两个属性：length，callee
+             a，length属性：获取实参的个数
+             b，callee属性：概述性的作用是获取arguments对象所在的函数，即callee属性指向了arguments对象所在的函数。常与递归函数或
+             者匿名自执行函数结合使用
+             
+        */
+
+         function  add(num1,num2,num3){
+             var sum ;
+             sum = num1 + num2;
+             console.log(sum);
+         }
+
+
+        //  重载函数：所谓重载函数是指，两个函数的名称相同，但是他们的形参的个数不同，或者说形参的类型不同，那么我们把这两个函数互称为重载函数
+        function fn(a,b){
+
+        }
+        function fn(a,b,c){
+
+        }
+        // fn(10,20);
+        // fn(10,20,30);
+        //注意，在javascript中是没有重载函数的，在javascript中如果函数名称相同那么后面的函数会覆盖前面的函数
+        // 如果要在javascript中模拟重载函数，可以使用arguments对象
+
+        //利用arguments对象模拟重载函数
+        function fn(){
+            if(arguments.length ==2){
+                console.log('只有两个形参');
+            }else if(arguments.length ==3){
+                console.log('有三个形参')
+            }
+        }
+        fn(10,20,30);
+        </script>
+    </body>
+</html>

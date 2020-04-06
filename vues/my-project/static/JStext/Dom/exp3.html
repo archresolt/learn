@@ -1,0 +1,36 @@
+利用sort方法为数组中的对象排序
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var arr = [1, 5, 46, 7, 6, 7, 65, 57, 5, 8, 85];
+        var arr1 = [
+            {
+                name: "caohan",
+                age: "18"
+            },
+            {
+                name: 'caoshusong',
+                age: "48"
+            }
+        ]
+        // 在不传参的情况下，数值型的数据在排序时会发生错误
+        arr.sort(function (a, b) {
+            return a - b;//a-b代表了升序排序;同时呢，b-a代表了由大到小排序
+        });
+
+        console.log(arr);
+
+        arr1.sort(function (a, b) {
+            return a.age - b.age;
+        });
+        console.log(arr1);
+    </script>
+</body>
+
+</html>

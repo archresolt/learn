@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        <script>
+var arr1 = [1,1,2,4,5,796,6,5,8,9,45,43,78,23,0,9];
+function sortArr(arr){
+  for(i=0;i<arr.length-1;i++){
+      for(j=0;j<arr.length-1-i;j++){
+          if(arr[j]>arr[j+1]){
+              temp=arr[j];
+              arr[j]=arr[j+1];
+              arr[j+1]=temp;
+          }
+      }
+  }
+  return arr;
+}
+sortArr(arr1);
+console.log(arr1);
+            </script>
+    </body>
+</html>

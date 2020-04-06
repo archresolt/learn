@@ -2,65 +2,7 @@
   <div class="part3">
     <div style="position:relative;width:100%;height:760px; overflow:hidden;">
       <div style="position:relative;width:200vw;transition:transform .2s;" :style="splitePanelStyle">
-        <div class="it-panel">
-          <div style="position:relative;width:100%;">
-            <div class="part3-a">
-              <div class="part3-3">
-                {{content0.name}}
-                <!-- 马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船 -->
-              </div>
-              <div class="part3-4">
-                <img src="@/assets/image/行程首页切图/Shape.png" />
-              </div>
-              <!-- <div class="part3-5">{{content0.address}}</div> -->
-              <div class="part3-6"></div>
-              <div class="part3-7">{{content0.description}}</div>
-              <div class="part3-8">
-                <img src="@/assets/image/行程首页切图/主题 copy.png" />
-              </div>
-              <div class="part3-9">{{content0.type}} |</div>
-              <div class="part3-10">
-                <span style="font-size:12px ;">￥</span>
-                <span style="font-size:20px ;">{{content0.price}}</span>
-                <span style="font-size: 12px;">起/人</span>
-              </div>
-              <div class="part3-11">
-                <div class="part3-11-1">详情</div>
-              </div>
-            </div>
-
-            <div class="part4">
-              <img :src="content0.pho" />
-            </div>
-          </div>
-          <div style="position:relative;width:100%;">
-            <div class="part5">
-              <img :src="content1.pho" />
-            </div>
-            <div class="part3-a-1">
-              <div class="part3-3">{{content1.name}}</div>
-              <div class="part3-4">
-                <img src="@/assets/image/行程首页切图/Shape.png" />
-              </div>
-              
-              <div class="part3-5">{{content1.address}}</div>
-              <div class="part3-6"></div>
-              <div class="part3-7">{{content1.description}}</div>
-              <div class="part3-8">
-                <img src="@/assets/image/行程首页切图/主题 copy.png" />
-              </div>
-              <div class="part3-9">{{content1.type}} |</div>
-              <div class="part3-10">
-                <span style="font-size:12px ;">￥</span>
-                <span style="font-size:20px ;">{{content1.price}}</span>
-                <span style="font-size: 12px;">起/人</span>
-              </div>
-              <div class="part3-11">
-                <div class="part3-11-1">详情</div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <!-- 第一页 -->
         <div class="it-panel">
           <div style="position:relative;width:100%;">
             <div class="part3-a">
@@ -89,25 +31,94 @@
             </div>
 
             <div class="part4">
-              <img :src="content0.pho" />
+              <img :src="content0.pho" style="width:100%;height:100%;">
             </div>
           </div>
           <div style="position:relative;width:100%;">
             <div class="part5">
-              <img :src="content1.pho" />
+              <img :src="content1.pho" style="width:100%;height:100%;">
             </div>
             <div class="part3-a-1">
               <div class="part3-3">{{content1.name}}</div>
               <div class="part3-4">
                 <img src="@/assets/image/行程首页切图/Shape.png" />
               </div>
+              
+              <div class="part3-5">{{content1.address}}</div>
+              <div class="part3-6"></div>
+              <div class="part3-7">{{content1.description}}</div>
+
+
+              <div class="part3-8">
+                <img src="@/assets/image/行程首页切图/主题 copy.png" />
+              </div>
+              <div class="part3-9">{{content1.type}} |</div>
+  <!-- <div class="part3-8">
+                <img src="@/assets/image/行程首页切图/主题 copy.png" />
+              </div>
+              <div class="part3-9">{{content0.type}} |</div> -->
+
+              <div class="part3-10">
+                <span style="font-size:12px ;">￥</span>
+                <span style="font-size:20px ;">{{content1.price}}</span>
+                <span style="font-size: 12px;">起/人</span>
+              </div>
+              <div class="part3-11">
+                <div class="part3-11-1">详情</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- 第二页 -->
+        <div class="it-panel">
+          <div style="position:relative;width:100%;">
+            <div class="part3-a">
+              <div class="part3-3">
+                {{content0.name}}
+                <!-- 马来西亚·邦邦岛·白珍珠度假村 | 丰富水下生物 探秘水下沉船 -->
+              </div>
+              <div class="part3-4">
+                <img src="@/assets/image/行程首页切图/Shape.png" style="width:100%;height:100%;">
+              </div>
+              <div class="part3-5">{{content0.address}}</div>
+              <div class="part3-6"></div>
+              <div class="part3-7">{{content0.description}}</div>
+              <div class="part3-8">
+                <img src="@/assets/image/行程首页切图/主题 copy.png"  style="width:100%;height:100%;">
+              </div>
+              <div class="part3-9">{{content0.type}} |</div>
+              <div class="part3-10">
+                <span style="font-size:12px ;">￥</span>
+                <span style="font-size:20px ;">{{content0.price}}</span>
+                <span style="font-size: 12px;">起/人</span>
+              </div>
+              <div class="part3-11">
+                <div class="part3-11-1">详情</div>
+              </div>
+            </div>
+
+            <div class="part4">
+              <img :src="content0.pho"  style="width:100%;height:100%;">
+            </div>
+          </div>
+          <div style="position:relative;width:100%;">
+            <div class="part5">
+              <img :src="content1.pho"  style="width:100%;height:100%;">
+            </div>
+            <div class="part3-a-1">
+              <div class="part3-3">{{content1.name}}</div>
+              <div class="part3-4">
+                <img src="@/assets/image/行程首页切图/Shape.png" style="width:100%;height:100%;">
+              </div>
               <div class="part3-5">{{content1.address}}</div>
               <div class="part3-6"></div>
               <div class="part3-7">{{content1.description}}</div>
               <div class="part3-8">
-                <img src="@/assets/image/行程首页切图/主题 copy.png" />
+                <img src="@/assets/image/行程首页切图/主题 copy.png" style="width:100%;height:100%;">
               </div>
-              <div class="part3-9">{{content1.type}}|</div>
+              <div class="part3-9">{{content1.type}} |</div>
               <div class="part3-10">
                 <span style="font-size:12px ;">￥</span>
                 <span style="font-size:20px ;">{{content1.price}}</span>
