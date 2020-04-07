@@ -7,36 +7,51 @@
     </el-table>
 
     <el-button @click="refershtable()">刷新列表</el-button>
-      <el-button @click="">增加一个列</el-button>
-      <el-button @click="">删除一个列</el-button>
-         <el-button @click="">修改数据</el-button>
+    <el-button @click>增加一个列</el-button>
+    <el-button @click>删除一个列</el-button>
+    <el-button @click>修改数据</el-button>
+
+    <copText :arr1="lastName1"></copText>
+
+    <copText :arr1="lastName2">
+      <el-input v-model="lastName3.name" slot="two"></el-input>
+      <el-button slot="one">check</el-button>
+    </copText>
+
+    <copText :arr1="lastName3">
+      <!-- 在这里由于子组件中定义的都是具名插槽，因此没有默认插槽了，下面的内容也是不显示的 -->
+      {{lastName1}}
+      <div slot="three">我想出现在第三个插槽里面   {{lastName2}}</div>
+      </copText>
   </div>
 </template>
 
 <script>
+import copText from "../components/tripcomponents/copText";
 const a = 1;
 export default {
-  data(){
-    return{
-      tableData:[
-      
-      ]
-    }
+  components: {
+    copText: copText
   },
-created(){
-this.refershtable();
-},
-  methods:{
-    refershtable(){
-      axios
-      .post("/api/getTableData")
-      .then(abc =>{
-        this.tableData = abc.data ;
-      })
+  data() {
+    return {
+      tableData: [{ name: "wade" }, { name: "jams" }, { name: "tom" }],
+      lastName1: { name: "kebi" },
+      lastName2: { name: "jodran" },
+      lastName3: { name: "zhouqi" }
+    };
+  },
+  created() {
+    this.refershtable();
+  },
+  methods: {
+    refershtable() {
+      axios.post("/api/getTableData").then(abc => {
+        this.tableData = abc.data;
+      });
     }
   }
 };
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

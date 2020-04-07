@@ -1,0 +1,41 @@
+设置内容
+<html>
+    <head>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+// $(document).ready(function(){
+//     $("#p1").text
+// })
+
+// 获取输入框中的元素
+// var x = $("#inp1").val();
+// return x;
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#p1").text("Hello world!");
+  });
+  $("#btn2").click(function(){
+    $("#p2").html("<b>Hello world!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#inp1").val("RUNOOB");
+  
+  });
+  //焦点事件是指通过鼠标点击选中元素时或者通过tab键定位到元素时，该元素就会获得焦点
+  $("#inp1").focus(function(){
+        $("#inp1").css("background-color","green")
+    })
+});
+</script>
+    </head>
+    <body>
+<p id = "p1">这是一个段落</p>
+<p id = "p2">这是另一个段落</p>
+<p></p>
+<input id = "inp1" value = "请输入">
+<button id = "btn1">设置文本</button>
+<button id = "btn2">设置html</button>
+<button id = "btn3">设置值</button>
+    </body>
+</html>

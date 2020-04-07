@@ -1,0 +1,45 @@
+css变量
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      /* 上面的代码片段把--my-cool-background这个自定义属性的作用域
+      定义在:root这个伪类中，这让该自定义属性能被全局访问到
+      （即在<html>标签内部的任何地方） */
+    :root {
+      --my-cool-background: #73a4f4;
+    }
+
+    p {
+      color: var(--my-cool-background);
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 2em;
+    }
+
+    #foo {
+      background-color: var(--my-cool-background);
+    }
+
+    body {
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div id="foo">
+    <h1>Hello</h1>
+  </div>
+  
+  <div>
+    <p>
+      More text inside another div. This also will have the nice light blue color, but not as a background, but as text color.
+    </p>
+  </div>
+</body>
+</html>

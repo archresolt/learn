@@ -1,0 +1,27 @@
+<!-- 你还可以从通过利用CSS变量获得另一个CSS变量的值 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+     /* 上面的代码创建了一个--my-gradient变量，是一个渐变样式，它的值被设为--top-color的值和--bottom-color的值组合的结果。现在，你可以在任何时候修改你的渐变样式，仅仅是修改变量的值就可以了，
+      而不再需要在样式表里满文件地去找用到这个渐变样式地方 。 */
+    :root {
+      --top-color: orange;
+      --bottom-color: yellow;
+      --my-gradient: linear-gradient(var(--top-color), var(--bottom-color));
+    }
+
+    body {
+      height: 100vh;
+      background-image: var(--my-gradient);
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
